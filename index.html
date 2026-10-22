@@ -1,0 +1,2188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Xandra Bai, product manager</title>
+<meta name="description" content="Xandra Bai is a product manager who turns fuzzy AI ambitions into products teams can build.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Sans:wght@400;500;600&family=Nanum+Pen+Script&display=swap">
+<style>
+:root{
+  --paper:#FFFFFF;--lilac:#F7F4FC;--lavender:#E4DAF7;--ink:#2A1838;--quiet:#6A5F7A;
+  --pen:#6B2BFF;--marigold:#F5A524;--hl:#FCDFA6;--line:#E4DAF7;
+  --o-line:#CFC6EA;--o-strong:#BBAEE6;--o-hl:#E4D9FF;--o-core:#6B2BFF;
+  --head:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --hand:"Nanum Pen Script","Bradley Hand","Segoe Print","Comic Sans MS",cursive;
+  --bar:68px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#15111B;--lilac:#1E1827;--lavender:#342A42;--ink:#EEE8F6;--quiet:#B0A6BF;
+    --pen:#A98EFF;--marigold:#E9A43A;--hl:rgba(245,165,36,.32);--line:#342A42;
+    --o-line:#43385A;--o-strong:#5E4F7D;--o-hl:rgba(169,142,255,.32);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#15111B;--lilac:#1E1827;--lavender:#342A42;--ink:#EEE8F6;--quiet:#B0A6BF;
+  --pen:#A98EFF;--marigold:#E9A43A;--hl:rgba(245,165,36,.32);--line:#342A42;
+    --o-line:#43385A;--o-strong:#5E4F7D;--o-hl:rgba(169,142,255,.32);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--bar) + 24px);scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100%;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--pen);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--head);font-stretch:112%;font-weight:700;letter-spacing:-0.02em;line-height:1.08;margin:0}
+p{margin:0 0 1em}
+.hand{font-family:var(--hand);color:var(--pen);font-size:28px;line-height:1.05;font-weight:400;letter-spacing:0}
+.hl{background:linear-gradient(transparent 40%,var(--hl) 40%,var(--hl) 88%,transparent 88%);padding:0 2px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:16px;top:calc(env(safe-area-inset-top,0px) + 8px);z-index:50;background:var(--paper);padding:8px 12px}
+
+/* top bar */
+.bar{position:fixed;top:0;left:0;right:0;z-index:20;padding-top:env(safe-area-inset-top,0px);background:var(--paper);border-bottom:1px solid var(--line)}
+.bar-in{height:var(--bar);max-width:1240px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-family:var(--head);font-stretch:112%;font-weight:700;font-size:19px;letter-spacing:-0.01em;text-decoration:none}
+.nav{display:flex;gap:26px}
+.nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--quiet);padding:2px 2px}
+.nav a:hover{color:var(--ink)}
+.nav a[aria-current="page"]{color:var(--ink);background:linear-gradient(transparent 55%,var(--hl) 55%,var(--hl) 92%,transparent 92%)}
+
+main{padding-top:calc(var(--bar) + 8px)}
+.page[hidden]{display:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+
+/* home */
+.hero{position:relative;padding:88px 0 72px;display:grid;grid-template-columns:minmax(0,760px) minmax(0,1fr);gap:24px;align-items:end}
+.hero h1{font-size:clamp(40px,6.2vw,76px);line-height:1.02}
+.hero-sub{margin-top:28px;font-size:19px;color:var(--quiet);max-width:600px}
+.hero-note{position:relative;padding:0 0 40px 8px;align-self:start;margin-top:72px}
+.hero-note svg{display:block;width:120px;height:70px;margin-left:-22px}
+.hero-note .hand{display:block;font-size:31px;max-width:230px}
+.doodle{position:absolute;pointer-events:none}
+.draw path{stroke-dasharray:260;stroke-dashoffset:260;animation:draw .9s .35s ease-out forwards}
+.draw-note{opacity:0;animation:fade .5s 1s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .draw path{animation:none;stroke-dashoffset:0}
+  .draw-note{animation:none;opacity:1}
+}
+.section-title{font-size:30px;margin:0 0 28px}
+.feature{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:48px;background:var(--lilac);border-radius:18px;padding:44px;position:relative;overflow:hidden}
+.feature h3{font-size:clamp(28px,3.2vw,40px);margin:14px 0 16px}
+.feature .meta{color:var(--quiet);font-size:15px;margin:0}
+.feature p.desc{color:var(--quiet);max-width:520px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 28px}
+.tag{display:inline-block;background:var(--lavender);color:var(--ink);font-size:13px;font-weight:600;padding:6px 12px;border-radius:3px}
+.tag:nth-child(1){transform:rotate(-1.5deg);background:var(--hl)}
+.tag:nth-child(2){transform:rotate(1deg)}
+.tag:nth-child(3){transform:rotate(-.5deg)}
+.btn{display:inline-block;font-weight:600;font-size:15px;text-decoration:none;color:var(--paper);background:var(--ink);padding:12px 20px;border-radius:999px}
+.btn:hover{opacity:.9}
+.btn-ghost{color:var(--ink);background:transparent;box-shadow:inset 0 0 0 1.5px var(--ink)}
+.stats{display:grid;gap:26px;align-content:center}
+.stat-num{font-family:var(--head);font-stretch:125%;font-weight:800;font-size:clamp(40px,4.6vw,58px);line-height:1;letter-spacing:-0.02em}
+.stat-label{color:var(--quiet);font-size:15px;margin-top:6px}
+.stat-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.stat-row svg{width:56px;height:26px;flex:none}
+.stat-row .hand{font-size:27px}
+.ann{display:inline-flex;align-items:center;gap:8px;flex-wrap:nowrap}
+.placeholder{margin-top:24px;border:1.5px dashed var(--lavender);border-radius:18px;padding:32px 44px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.placeholder h3{font-size:22px}
+.placeholder p{color:var(--quiet);margin:6px 0 0}
+
+/* generic pages */
+.page-head{padding:80px 0 40px;max-width:760px}
+.page-head h1{font-size:clamp(40px,5.4vw,64px)}
+.page-head p{color:var(--quiet);font-size:19px;margin-top:20px}
+.work-list{display:grid;gap:24px;padding-bottom:40px}
+
+.about{display:grid;grid-template-columns:minmax(0,300px) minmax(0,680px);gap:64px;padding-bottom:40px}
+.photo{aspect-ratio:4/5;background:var(--lavender);border-radius:18px;display:flex;align-items:center;justify-content:center;color:var(--quiet);font-size:15px;transform:rotate(-1.5deg)}
+.about h2{font-size:24px;margin:40px 0 14px}
+.about h2:first-child{margin-top:0}
+.edu{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.edu li{padding:16px 20px;background:var(--lilac);border-radius:12px}
+.edu strong{display:block;font-weight:600}
+.edu span{color:var(--quiet);font-size:15px}
+
+.resume{max-width:760px;padding-bottom:40px}
+.resume h2{font-size:24px;margin:44px 0 16px}
+.job{border-top:1px solid var(--line);padding-top:18px}
+.job-top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.job-top strong{font-weight:600}
+.job-top span{color:var(--quiet);font-size:15px}
+.job ul{margin:12px 0 0;padding-left:20px}
+.job li{margin-bottom:6px}
+
+/* case study */
+.cs{display:grid;grid-template-columns:190px minmax(0,1fr);gap:56px;max-width:1240px;margin:0 auto;padding:0 28px}
+.rail{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--bar) + 40px);align-self:start;padding-top:64px}
+.rail a{display:block;text-decoration:none;color:var(--quiet);font-size:15px;padding:5px 0;width:max-content;max-width:100%}
+.rail a:hover{color:var(--ink)}
+.rail a.active{color:var(--ink);font-weight:600;background:linear-gradient(transparent 50%,var(--hl) 50%,var(--hl) 90%,transparent 90%)}
+.rail .back{margin-bottom:20px;font-size:14px}
+.cs-main{max-width:948px;padding-bottom:80px;min-width:0}
+.cs-main section{padding-top:56px}
+.row{max-width:680px}
+.noted{display:grid;grid-template-columns:minmax(0,680px) 228px;gap:40px;align-items:start}
+.note{position:relative;padding-top:6px}
+.note svg{display:block;width:64px;height:30px;margin-bottom:2px}
+.note .hand{display:block;font-size:27px}
+.cs-hero{padding-top:64px}
+.cs-hero h1{font-size:clamp(36px,4.8vw,58px);line-height:1.04;max-width:680px}
+.cs-meta{margin:22px 0 6px;font-weight:600;max-width:680px}
+.cs-role{color:var(--quiet);margin:0 0 18px;max-width:680px}
+.fine{color:var(--quiet);font-size:14px;line-height:1.55}
+.cs-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:28px 0 10px}
+.cs-stat{background:var(--lilac);border-radius:14px;padding:18px 20px}
+.cs-stat b{display:block;font-family:var(--head);font-stretch:125%;font-weight:800;font-size:34px;line-height:1.05;letter-spacing:-0.02em}
+.cs-stat span{color:var(--quiet);font-size:14px}
+.cs-main h2{font-size:clamp(28px,3vw,36px);margin:0 0 20px}
+.cs-main h3{font-size:22px;margin:40px 0 12px}
+.lede{font-family:var(--head);font-stretch:112%;font-weight:700;font-size:26px;line-height:1.2;letter-spacing:-0.01em;margin:0 0 20px}
+blockquote{margin:0 0 20px;padding:4px 0 4px 20px;border-left:3px solid var(--lavender);color:var(--ink)}
+blockquote p{margin:0 0 6px}
+blockquote cite{color:var(--quiet);font-style:normal;font-size:14px}
+.label{font-weight:600}
+
+/* process */
+.steps{list-style:none;padding:0;margin:28px 0 8px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;max-width:948px}
+.steps li{background:var(--lilac);border-radius:12px;padding:16px 14px;position:relative}
+.steps li:last-child{background:var(--hl)}
+.steps b{display:block;font-family:var(--head);font-stretch:112%;font-size:15px;margin-bottom:4px}
+.steps small{display:block;color:var(--quiet);font-size:13px;line-height:1.45}
+.steps li:last-child small{color:var(--ink)}
+.steps .v{font-family:var(--head);font-weight:800;font-size:13px;color:var(--quiet);display:block;margin-bottom:6px}
+
+/* decision map */
+.map{margin:28px 0 8px;max-width:948px}
+.map-group{margin-bottom:16px}
+.map-group p{font-size:14px;color:var(--quiet);margin:0 0 8px;font-weight:600}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.tile{border:1.5px solid var(--lavender);border-radius:12px;padding:14px 16px;background:var(--paper)}
+.tile b{display:block;font-family:var(--head);font-stretch:112%;font-size:16px;margin-bottom:4px}
+.tile span{font-size:14px;color:var(--quiet);line-height:1.45;display:block}
+.tile.planned{border-style:dashed}
+
+/* anatomy mock */
+.mock{background:var(--lilac);border-radius:16px;padding:22px 24px;margin:24px 0 12px;max-width:680px}
+.mock-title{font-weight:600;margin:0 0 10px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.chip{font-size:13px;padding:4px 12px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--lavender);background:var(--paper)}
+.chip.on{background:var(--ink);color:var(--paper);box-shadow:none;font-weight:600}
+.mock details{background:var(--paper);border-radius:10px;margin-bottom:8px;padding:10px 14px}
+.mock summary{cursor:pointer;display:flex;justify-content:space-between;gap:12px;font-weight:500;list-style:none}
+.mock summary::-webkit-details-marker{display:none}
+.mock summary::before{content:"";width:0;height:0;border-left:5px solid var(--ink);border-top:4px solid transparent;border-bottom:4px solid transparent;margin-top:9px;flex:none;transition:transform .15s}
+.mock details[open] summary::before{transform:rotate(90deg)}
+.mock summary .t{flex:1}
+.mock summary .src{font-size:13px;color:var(--quiet);white-space:nowrap}
+.ev{margin:10px 0 2px 16px;display:grid;gap:10px}
+.ev div{font-size:15px}
+.ev em{display:block}
+.ev small{color:var(--quiet);font-size:13px}
+.ev small u{text-decoration-color:var(--quiet)}
+.mock .foot{font-size:13px;color:var(--quiet);margin:12px 0 0;border-top:1px solid var(--lavender);padding-top:10px}
+.num{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--lavender);color:var(--ink);font-size:12px;font-weight:600;flex:none}
+.legend{list-style:none;padding:0;margin:14px 0 6px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 20px;max-width:680px}
+.legend li{display:flex;gap:10px;font-size:15px}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;margin:20px 0 10px;max-width:948px}
+table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.5}
+th{text-align:left;font-weight:600;font-size:14px;color:var(--quiet);padding:10px 14px;border-bottom:1.5px solid var(--ink)}
+td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+td:first-child{font-weight:600}
+td.pick{background:var(--hl);font-weight:600}
+
+/* data flow */
+.flow{margin:24px 0 8px;max-width:948px}
+.flow svg{width:100%;height:auto;display:block}
+.flow .lane{fill:var(--lilac)}
+.flow .lane2{fill:none;stroke:var(--ink);stroke-width:1.25}
+.flow .box{fill:var(--paper);stroke:var(--quiet);stroke-width:1.1}
+.flow .box.key{fill:var(--hl);stroke:var(--ink);stroke-width:1.5}
+.flow .ln{fill:none;stroke:var(--quiet);stroke-width:1.25}
+.flow text{font-family:var(--body);fill:var(--ink);font-size:13px}
+.flow .sub{fill:var(--quiet);font-size:11.5px}
+.flow .lab{fill:var(--quiet);font-size:11.5px}
+.flow .lanelab{font-weight:600;font-size:12px;fill:var(--quiet)}
+.flow .arrowhead{fill:var(--quiet)}
+
+/* roadmap */
+.road{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:26px 0 12px;max-width:948px}
+.road div{border-radius:6px;padding:20px 18px;background:var(--lavender)}
+.road div:first-child{background:var(--hl);transform:rotate(-1deg)}
+.road div:nth-child(2){transform:rotate(.6deg)}
+.road div:nth-child(3){transform:rotate(-.4deg)}
+.road b{display:block;font-family:var(--head);font-stretch:112%;font-size:18px;margin-bottom:6px}
+.road small{font-size:13px;font-weight:600;display:block;margin-bottom:4px}
+.road span{font-size:15px;line-height:1.5;display:block}
+.story{background:var(--lilac);border-radius:16px;padding:22px 24px;max-width:680px;margin:16px 0 8px}
+.story p{margin:0 0 10px}
+.story ul{margin:0;padding-left:20px}
+.story li{margin-bottom:6px;font-size:15px}
+
+
+/* product calls */
+.call{border:1.5px solid var(--lavender);border-radius:16px;padding:26px 28px;margin:0 0 20px;max-width:680px;background:var(--paper)}
+.call h3{margin:0 0 18px;font-size:22px}
+.beats{display:grid;gap:10px}
+.beats>div{display:grid;grid-template-columns:104px minmax(0,1fr);gap:14px;align-items:baseline}
+.beat{font-size:13.5px;font-weight:600;color:var(--quiet)}
+.beats p{margin:0;font-size:16px;line-height:1.5}
+.beats>div:nth-child(2){background:var(--lilac);border-radius:8px;padding:8px 10px;margin:0 -10px}
+.beats>div:nth-child(2) .beat{color:var(--ink)}
+.score{margin:22px 0 4px;font-size:14.5px}
+.score-row{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,.8fr)) 76px;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.score-head{font-size:13px;color:var(--quiet);font-weight:600;border-bottom:1.5px solid var(--ink)}
+.dots{display:flex;gap:5px}
+.dots i{width:10px;height:10px;border-radius:50%;background:var(--ink);display:block}
+.dots i.o{background:none;box-shadow:inset 0 0 0 1.5px var(--lavender)}
+.dots i.h{background:linear-gradient(90deg,var(--ink) 50%,transparent 50%);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.pill{display:inline-block;font-size:12.5px;font-weight:600;padding:3px 10px;border-radius:3px;background:var(--lavender)}
+.pill.pick{background:var(--hl)}
+.more{margin-top:16px}
+.more summary{cursor:pointer;font-size:14.5px;font-weight:600;color:var(--quiet)}
+.more summary:hover{color:var(--ink)}
+.more[open] summary{margin-bottom:12px}
+.more p{font-size:15px;line-height:1.55}
+.join{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:22px}
+.chipbox{display:inline-flex;flex-direction:column;background:var(--lilac);border-radius:10px;padding:10px 14px;font-weight:600;font-size:14.5px;line-height:1.3}
+.chipbox small{font-weight:400;color:var(--quiet);font-size:12.5px}
+.chipbox.on{background:var(--hl)}
+.chipbox.on small{color:var(--ink)}
+.op{font-family:var(--head);font-weight:800;font-size:20px;color:var(--quiet)}
+blockquote.short{margin:20px 0 0}
+@media (max-width:900px){
+  .beats>div{grid-template-columns:minmax(0,1fr);gap:2px}
+  .call{padding:22px 20px}
+  .score-row{grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,.7fr)) 64px;gap:6px;font-size:13.5px}
+}
+
+
+/* short read + mini card */
+.mini{display:block;margin-top:24px;border:1.5px solid var(--lavender);border-radius:18px;padding:30px 44px;text-decoration:none;background:var(--paper);transition:border-color .15s}
+.mini:hover{border-color:var(--ink)}
+.mini-meta{display:block;font-size:14px;color:var(--quiet);margin-bottom:8px}
+.mini h3{font-size:clamp(22px,2.4vw,28px);margin:0 0 10px}
+.mini p{color:var(--quiet);margin:0 0 14px;max-width:620px}
+.mini-go{font-weight:600;font-size:15px;background:linear-gradient(transparent 55%,var(--hl) 55%,var(--hl) 92%,transparent 92%)}
+.short{max-width:948px;padding:64px 0 40px}
+.short>p,.short>h2,.short>h1{max-width:680px}
+.short .noted{margin-bottom:6px}
+.short h1{font-size:clamp(34px,4.4vw,52px);line-height:1.05;margin-top:18px}
+.short h2{font-size:24px;margin:44px 0 14px}
+.back-link{font-size:14px;color:var(--quiet);text-decoration:none}
+.back-link:hover{color:var(--ink)}
+.bridge{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:8px}
+.bridge-step{background:var(--lilac);border-radius:12px;padding:16px}
+.bridge-step.dest{background:var(--hl)}
+.bridge-step .bt{display:inline-block;font-size:12px;font-weight:600;color:var(--quiet);margin-bottom:8px}
+.bridge-step.dest .bt{color:var(--ink)}
+.bridge-step b{display:block;font-family:var(--head);font-stretch:112%;font-size:16px;line-height:1.25;margin-bottom:6px}
+.bridge-step span:last-child{display:block;font-size:14px;line-height:1.45;color:var(--quiet)}
+.bridge-step.dest span:last-child{color:var(--ink)}
+.bridge-axis{display:flex;justify-content:space-between;font-size:13px;font-weight:600;color:var(--quiet);margin-top:10px;padding-top:8px;border-top:2px solid var(--ink);position:relative}
+.bridge-axis::after{content:"";position:absolute;right:-1px;top:-7px;border-left:9px solid var(--ink);border-top:6px solid transparent;border-bottom:6px solid transparent}
+@media (max-width:900px){
+  .bridge{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mini{padding:24px}
+}
+@media (max-width:560px){
+  .bridge{grid-template-columns:minmax(0,1fr)}
+}
+
+
+.short-dek{font-size:20px;line-height:1.5;color:var(--ink);margin:20px 0 22px;max-width:680px}
+.shows{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:28px 0 8px;max-width:948px}
+.shows div{border-top:3px solid var(--ink);padding:14px 4px 0}
+.shows b{display:block;font-family:var(--head);font-stretch:112%;font-size:18px;line-height:1.2;margin-bottom:6px}
+.shows span{display:block;font-size:15px;line-height:1.5;color:var(--quiet)}
+@media (max-width:900px){.shows{grid-template-columns:minmax(0,1fr);gap:16px}}
+
+
+/* visual short read */
+.ico{display:inline-flex;width:22px;height:22px;flex:none}
+.ico svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.short-dek{font-size:21px}
+.short-role{font-size:15px;color:var(--quiet);max-width:680px;margin:0 0 30px}
+.strip{list-style:none;padding:0;margin:0 0 8px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;max-width:948px;position:relative}
+.strip li{border-radius:16px;padding:20px 20px 22px;position:relative}
+.strip li:not(:last-child)::after{content:"";position:absolute;right:-24px;top:50%;width:18px;height:2px;background:var(--quiet)}
+.strip li:not(:last-child)::before{content:"";position:absolute;right:-26px;top:calc(50% - 5px);border-left:7px solid var(--quiet);border-top:6px solid transparent;border-bottom:6px solid transparent}
+.strip .f1{background:var(--lilac)}
+.strip .f2{background:var(--hl)}
+.strip .f3{background:var(--lavender)}
+.strip .ico{width:28px;height:28px;margin-bottom:12px}
+.strip .when{display:block;font-size:13px;font-weight:600;color:var(--quiet);margin-bottom:2px}
+.strip .f2 .when{color:var(--ink)}
+.strip b{display:block;font-family:var(--head);font-stretch:112%;font-size:19px;line-height:1.2;margin-bottom:6px}
+.strip .what{display:block;font-size:14.5px;line-height:1.45;color:var(--quiet)}
+.strip .f2 .what{color:var(--ink)}
+.shows2{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:948px}
+.shows2 div{background:var(--lilac);border-radius:14px;padding:18px}
+.shows2 .ico{width:26px;height:26px;color:var(--ink);background:var(--paper);border-radius:8px;padding:5px;box-sizing:content-box;margin-bottom:12px}
+.shows2 b{display:block;font-family:var(--head);font-stretch:112%;font-size:17px;line-height:1.2;margin-bottom:4px}
+.shows2 span:last-child{display:block;font-size:14.5px;line-height:1.45;color:var(--quiet)}
+.short-p{color:var(--quiet);max-width:680px}
+.flowv{display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,.9fr) 40px minmax(0,1fr);align-items:center;gap:6px;max-width:948px;margin:10px 0 8px}
+.srcs,.outs{display:grid;gap:8px}
+.chip2{display:flex;align-items:center;gap:10px;background:var(--lilac);border-radius:10px;padding:10px 14px;font-size:14.5px;font-weight:500}
+.chip2 .ico{width:20px;height:20px;color:var(--quiet)}
+.srcs .t1{transform:rotate(-1.5deg);margin-right:18px}
+.srcs .t2{transform:rotate(1deg);margin-left:12px}
+.srcs .t3{transform:rotate(-.6deg);margin-right:8px}
+.chip2.out{background:var(--paper);box-shadow:inset 0 0 0 1.5px var(--lavender)}
+.chip2.out .ico{color:var(--ink)}
+.agent{background:var(--lavender);color:var(--ink);border-radius:16px;padding:22px 16px;text-align:center;display:grid;justify-items:center;gap:4px}
+.agent .ico{width:30px;height:30px;color:var(--ink);margin-bottom:4px}
+.agent b{font-family:var(--head);font-stretch:112%;font-size:17px;line-height:1.2}
+.agent span:last-child{font-size:13px;color:var(--quiet)}
+.flowarrow{height:2px;background:var(--quiet);position:relative;margin:0 4px}
+.flowarrow::after{content:"";position:absolute;right:-2px;top:-5px;border-left:8px solid var(--quiet);border-top:6px solid transparent;border-bottom:6px solid transparent}
+.qswap{display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,1.3fr);align-items:stretch;gap:6px}
+.q-old,.q-new{border-radius:14px;padding:18px 20px}
+.q-old{background:var(--lilac)}
+.q-old b{color:var(--quiet);font-weight:600}
+.q-new{background:var(--hl)}
+.q-old span,.q-new span{display:block;font-size:13px;font-weight:600;color:var(--quiet);margin-bottom:6px}
+.q-new span{color:var(--ink)}
+.q-old b,.q-new b{display:block;font-family:var(--head);font-stretch:112%;font-size:20px;line-height:1.25}
+.q-arrow{align-self:center;height:2px;background:var(--ink);position:relative;margin:0 4px}
+.q-arrow::after{content:"";position:absolute;right:-2px;top:-5px;border-left:8px solid var(--ink);border-top:6px solid transparent;border-bottom:6px solid transparent}
+.path{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;max-width:948px;position:relative;padding-top:18px}
+.path::before{content:"";position:absolute;left:18px;right:0;top:35px;height:2px;background:var(--ink)}
+.path::after{content:"";position:absolute;right:-2px;top:30px;border-left:9px solid var(--ink);border-top:6px solid transparent;border-bottom:6px solid transparent}
+.stop{position:relative}
+.dot{position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;font-family:var(--head);font-weight:800;font-size:15px;margin-bottom:14px;background:var(--paper);box-shadow:inset 0 0 0 2px var(--ink)}
+.stop.nr .dot{background:var(--lilac)}
+.stop.tmp .dot{background:var(--paper);box-shadow:inset 0 0 0 2px var(--quiet);color:var(--quiet);border:2px dashed transparent}
+.stop.dst .dot{background:var(--hl)}
+.kind{display:inline-block;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;margin-bottom:8px}
+.nr .kind{background:var(--lilac);color:var(--ink)}
+.tmp .kind{background:var(--paper);box-shadow:inset 0 0 0 1.2px var(--quiet);color:var(--quiet)}
+.dst .kind{background:var(--hl);color:var(--ink)}
+.stop b{display:block;font-family:var(--head);font-stretch:112%;font-size:17px;line-height:1.25;margin-bottom:6px}
+.stop .d{display:block;font-size:14.5px;line-height:1.45;color:var(--quiet)}
+.path-ends{display:flex;justify-content:space-between;max-width:948px;font-size:13px;font-weight:600;color:var(--quiet);margin-top:14px}
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:948px}
+.w{border-radius:14px;padding:16px 18px}
+.w.nr{background:var(--lilac)}
+.w.tmp{background:var(--paper);box-shadow:inset 0 0 0 1.5px var(--lavender)}
+.w.dst{background:var(--hl)}
+.w.dst .kind,.w.nr .kind{background:var(--paper)}
+.w p{margin:0;font-size:15px;line-height:1.5}
+@media (max-width:900px){
+  .strip,.shows2,.why{grid-template-columns:minmax(0,1fr);gap:22px}
+  .shows2,.why{gap:10px}
+  .strip li:not(:last-child)::after{right:auto;left:32px;top:auto;bottom:-16px;width:2px;height:10px}
+  .strip li:not(:last-child)::before{right:auto;left:27px;top:auto;bottom:-20px;border-left:6px solid transparent;border-right:6px solid transparent;border-top:7px solid var(--quiet);border-bottom:0}
+  .flowv{grid-template-columns:minmax(0,1fr);gap:10px}
+  .flowarrow{width:2px;height:20px;margin:0 auto}
+  .flowarrow::after{right:auto;left:-5px;top:auto;bottom:-2px;border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid var(--quiet);border-bottom:0}
+  .srcs .t1,.srcs .t2,.srcs .t3{margin:0}
+  .qswap{grid-template-columns:minmax(0,1fr)}
+  .q-arrow{width:2px;height:20px;margin:0 auto}
+  .q-arrow::after{right:auto;left:-5px;top:auto;bottom:-2px;border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid var(--ink);border-bottom:0}
+  .path{grid-template-columns:minmax(0,1fr);gap:18px;padding-top:0;padding-left:52px}
+  .path::before{left:17px;right:auto;top:18px;bottom:0;width:2px;height:auto}
+  .path::after{right:auto;left:12px;top:auto;bottom:-6px;border-left:6px solid transparent;border-right:6px solid transparent;border-top:9px solid var(--ink);border-bottom:0}
+  .dot{position:absolute;left:-52px;top:-4px;margin:0}
+  .path-ends{display:none}
+}
+
+
+.note .arr{display:block;width:86px;height:48px;margin-bottom:2px;fill:none;stroke:var(--pen);stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+.short .short-role{margin:14px 0 26px;font-weight:600;color:var(--ink)}
+.short .noted p{max-width:680px}
+.short .note .hand{font-size:28px}
+@media (max-width:1180px){.note .arr{transform:rotate(80deg)!important;width:50px;height:34px;margin:4px 0 2px -6px}}
+
+
+.short .noted{grid-template-columns:minmax(0,680px) 250px;gap:28px}
+.short .note{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px;align-items:start;padding-top:0}
+.short .note .arr{width:58px;height:36px;margin-top:2px}
+.short .note .hand{font-size:27px}
+@media (max-width:1180px){
+  .short .noted{grid-template-columns:minmax(0,680px);gap:0}
+  .short .note{padding:0 0 14px 6px}
+  .short .note .arr{width:40px;height:30px}
+}
+
+
+.cs-main .note .arr{width:72px;height:40px}
+
+
+/* unified notes (site-wide) */
+.noted{grid-template-columns:minmax(0,680px) 236px;gap:32px;margin-bottom:6px}
+.note{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px;align-items:start;padding-top:0}
+.note .arr,.cs-main .note .arr{width:58px;height:36px;margin-top:2px}
+.note .hand{font-size:27px}
+@media (max-width:1180px){
+  .noted{grid-template-columns:minmax(0,680px);gap:0}
+  .note{padding:0 0 14px 6px}
+  .note .arr,.cs-main .note .arr{width:40px;height:30px}
+}
+
+/* sections menu (small screens) */
+.sections-mobile{display:none}
+
+footer{margin-top:80px;border-top:1px solid var(--line)}
+.foot-in{max-width:1240px;margin:0 auto;padding:36px 28px 48px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.foot-in p{margin:0;color:var(--quiet);font-size:15px}
+.foot-links{display:flex;gap:22px;flex-wrap:wrap}
+.foot-links a{font-weight:500;text-decoration:none;font-size:15px}
+.foot-links a:hover{text-decoration:underline}
+
+@media (max-width:1180px){
+  .cs{grid-template-columns:minmax(0,1fr);gap:0}
+  .rail{display:none}
+  .sections-mobile{display:block;position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--bar));z-index:10;background:var(--paper);border-bottom:1px solid var(--line);margin:0 -28px;padding:0 28px}
+  .sections-mobile summary{cursor:pointer;font-weight:600;font-size:15px;padding:12px 0}
+  .sections-mobile nav{display:grid;padding:0 0 12px}
+  .sections-mobile a{text-decoration:none;color:var(--quiet);padding:6px 0;font-size:15px}
+  .noted{grid-template-columns:minmax(0,680px)}
+  .note{padding:0 0 12px 18px}
+  .note svg{transform:rotate(90deg);width:40px;height:26px;margin-left:-10px}
+}
+@media (max-width:900px){
+  .hero{grid-template-columns:minmax(0,1fr);padding:56px 0 48px}
+  .hero-note{margin-top:0;padding-bottom:0}
+  .hero-note svg{margin-left:40px}
+  .doodle{display:none}
+  .feature{grid-template-columns:minmax(0,1fr);padding:30px 24px;gap:28px}
+  .about{grid-template-columns:minmax(0,1fr);gap:32px}
+  .photo{max-width:260px}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .road{grid-template-columns:minmax(0,1fr)}
+  .legend{grid-template-columns:minmax(0,1fr)}
+  .cs-stats{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+  .bar-in{padding:0 18px}
+  .wrap,.cs{padding:0 18px}
+  .sections-mobile{margin:0 -18px;padding:0 18px}
+  .nav{gap:16px}
+  .brand{font-size:17px}
+  .placeholder{padding:24px}
+  .tiles{grid-template-columns:minmax(0,1fr)}
+}
+
+/* homepage orbit */
+.o-flow{display:none;flex-direction:column;align-items:center;text-align:center;padding:16px 0 8px}
+.o-f-label{margin:12px 0 22px;font-size:19px;font-weight:650;letter-spacing:0.4px;color:var(--quiet)}
+.o-f-line{display:block;width:0}
+.o-f-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;max-width:360px;text-decoration:none;border-radius:16px}
+.o-f-item:focus-visible{outline:3px solid var(--pen);outline-offset:6px}
+.o-f-port{position:relative;flex:none}
+.o-f-open{background:var(--o-core) !important;position:absolute;display:flex;align-items:center;justify-content:center;border-radius:50%;border:3px solid var(--paper);box-sizing:border-box;box-shadow:0 4px 12px rgba(48,22,120,0.25);transition:transform .2s ease}
+.o-f-item:hover .o-f-open{transform:scale(1.12)}
+.o-f-pill{display:inline-flex;align-items:center;height:34px;margin:4px 0;padding:0 16px;border-radius:999px;background:var(--paper);border:1.5px solid var(--lavender);box-sizing:border-box;font-size:16px;font-weight:720;font-stretch:106%;color:var(--ink)}
+.o-facts{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:12px}
+.o-f-cap{font-size:13px;font-weight:650;color:var(--quiet)}
+.o-facts-row{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px}
+.o-fact{display:inline-flex;align-items:baseline;gap:6px}
+.o-f-num{font-size:21px;line-height:1.15;font-weight:760;font-stretch:106%;color:var(--ink)}
+.o-f-unit{font-size:13.5px;color:var(--quiet)}
+.o-f-skill{font-size:17px;line-height:1.2;font-weight:740;font-stretch:106%;color:var(--ink)}
+.o-flow .o-hl{box-shadow:inset 0 -10px 0 var(--o-hl);padding:0 3px;border-radius:2px}
+.o-f-grid{display:grid;grid-template-columns:1fr;justify-items:center;gap:48px;width:100%;max-width:760px}
+.o-bob{animation:o-bob 7s ease-in-out infinite}
+@keyframes o-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@media (min-width:640px){.o-f-grid{grid-template-columns:1fr 1fr;gap:32px}}
+.o-stage{position:relative;width:100%;max-width:min(1360px, calc((100vh - 120px) * 1.7895));margin:0 auto;aspect-ratio:1360/760;container-type:inline-size}
+.o-lines{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible}
+.o-core-ring{position:absolute;border-radius:50%;box-sizing:border-box;pointer-events:none}
+.o-core-pulse{position:absolute;border-radius:50%;box-sizing:border-box;pointer-events:none;animation:o-core-pulse 4.5s ease-out infinite}
+@keyframes o-core-pulse{0%{transform:scale(1);opacity:.5}100%{transform:scale(1.5);opacity:0}}
+.o-core{position:absolute;left:31.0294cqw;top:22.9412cqw;width:14.4118cqw;height:14.4118cqw}
+.o-sat{position:absolute;display:flex;text-decoration:none;cursor:pointer;border-radius:1.4706cqw}
+.o-sat:focus-visible{outline:0.2206cqw solid var(--pen);outline-offset:0.5882cqw}
+.o-sat-biz{left:3.6765cqw;top:0.9559cqw;width:41.9118cqw;flex-direction:row;align-items:flex-start;gap:2.9412cqw}
+.o-sat-ux{left:8.0882cqw;top:35.6618cqw;width:22.0588cqw;flex-direction:column;align-items:center}
+.o-sat-data{left:46.3235cqw;top:35.6618cqw;width:22.0588cqw;flex-direction:column;align-items:center}
+.o-sat-own{left:72.0588cqw;top:9.4118cqw;width:22.0588cqw;flex-direction:column;align-items:center}
+.o-hole{position:relative;flex:none}
+.o-port{position:absolute;left:0;top:0;right:0;bottom:0;border-radius:50%;border:0.4412cqw solid var(--paper);box-sizing:border-box;overflow:hidden;transition:box-shadow .3s ease}
+.o-ill{position:absolute;left:0;top:0;width:12.6471cqw;height:12.6471cqw;transform-origin:0 0}
+.o-open{position:absolute;transition:transform .2s ease}
+.o-sat:hover .o-open,.o-sat:focus-visible .o-open{transform:scale(1.12)}
+.o-anno{position:absolute;pointer-events:none;display:flex;flex-direction:column;gap:0.3676cqw}
+.o-arrow{position:absolute;left:0;top:0;width:0.7353cqw;height:0.7353cqw;overflow:visible}
+.o-hl{box-shadow:inset 0 -0.8824cqw 0 var(--o-hl);padding:0 0.2206cqw;border-radius:0.1471cqw}
+.o-float-1{animation:o-float-a 17s ease-in-out infinite}
+.o-float-2{animation:o-float-b 21s ease-in-out -6s infinite}
+.o-float-3{animation:o-float-c 19s ease-in-out -11s infinite}
+.o-float-4{animation:o-float-b 23s ease-in-out -3s infinite reverse}
+@keyframes o-float-a{0%,100%{transform:translate(0,0)}25%{transform:translate(0.5882cqw,-0.6618cqw)}50%{transform:translate(0.1471cqw,-1.1029cqw)}75%{transform:translate(-0.5882cqw,-0.4412cqw)}}
+@keyframes o-float-b{0%,100%{transform:translate(0,0)}30%{transform:translate(-0.6618cqw,-0.5882cqw)}60%{transform:translate(-0.2206cqw,-1.0294cqw)}80%{transform:translate(0.5147cqw,-0.3676cqw)}}
+@keyframes o-float-c{0%,100%{transform:translate(0,0)}20%{transform:translate(0.4412cqw,-0.5147cqw)}55%{transform:translate(-0.3676cqw,-0.9559cqw)}80%{transform:translate(-0.6618cqw,-0.2941cqw)}}
+@keyframes o-fuel14{to{stroke-dashoffset:-28}}
+@keyframes o-fuel9{to{stroke-dashoffset:-18}}
+@media (prefers-reduced-motion: reduce){.o-float-1,.o-float-2,.o-float-3,.o-float-4,.o-l,.o-l-flow{animation:none}.o-open{transition:none}}
+@media (prefers-reduced-motion: reduce){.o-core-pulse{animation:none;opacity:0}.o-bob{animation:none}.o-f-open{transition:none}}
+.o-home{padding:8px 28px 8px}
+.o-home .o-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.o-stage,.o-flow{font-family:var(--head);line-height:normal}
+.o-stage p,.o-flow p{margin:0}
+.o-orbit{fill:none;stroke:var(--line);stroke-width:1.6}
+.o-ownring{fill:none;stroke:var(--o-line);stroke-width:1.8;stroke-dasharray:5 7}
+.o-ringlabel{font-family:var(--head);font-size:21px;font-weight:650;letter-spacing:.6px;fill:var(--quiet)}
+.o-l{fill:none;transition:stroke .25s ease}
+.o-l-biz{stroke:var(--o-strong);stroke-width:4.5;stroke-linecap:round}
+.o-l-ux,.o-l-data{stroke:var(--o-line);stroke-width:2;stroke-dasharray:8 6}
+.o-l-own{stroke:var(--o-strong);stroke-width:3.5;stroke-dasharray:1 8;stroke-linecap:round}
+.o-l-flow{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-dasharray:2 12;stroke-linecap:round;opacity:0}
+.o-stage[data-active="biz"] .o-l-biz{stroke:var(--pen);stroke-width:6}
+.o-stage[data-active="biz"] .o-l-flow{opacity:1;animation:o-fuel14 1s linear infinite}
+.o-stage[data-active="ux"] .o-l-ux,.o-stage[data-active="data"] .o-l-data{stroke:var(--pen);stroke-width:3;animation:o-fuel14 1s linear infinite}
+.o-stage[data-active="own"] .o-l-own{stroke:var(--pen);stroke-width:4.5;animation:o-fuel9 .8s linear infinite}
+.o-stage .o-port{box-shadow:0 0 0 0.1103cqw var(--lavender),0 0.4412cqw 1.1765cqw rgba(48,22,120,.08)}
+.o-stage[data-active="biz"] .o-sat-biz .o-port,.o-stage[data-active="ux"] .o-sat-ux .o-port,.o-stage[data-active="data"] .o-sat-data .o-port,.o-stage[data-active="own"] .o-sat-own .o-port{box-shadow:0 0 0 0.2206cqw var(--pen),0 1.0294cqw 2.2059cqw rgba(48,22,120,.22)}
+@keyframes o-fuel14{to{stroke-dashoffset:-28}}
+@keyframes o-fuel9{to{stroke-dashoffset:-18}}
+@media (max-width:1099px){.o-stage{display:none}.o-flow{display:flex}}
+@media (max-width:640px){.o-home{padding:4px 20px 8px}}
+/* tableau dashboard */
+.viz-card{display:block;margin:28px 0 12px;max-width:1000px;border:1.5px solid var(--lavender);border-radius:18px;overflow:hidden;text-decoration:none;background:var(--paper);transition:border-color .15s}
+.viz-card:hover{border-color:var(--ink)}
+.viz-card:hover .btn{opacity:.9}
+.viz-prev{background:#D7EFEA;padding:28px 28px 0}
+.vp-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.vp-tabs span{font-size:13px;font-weight:600;padding:5px 14px;border-radius:999px;background:#FFFFFF;color:#0F5E57}
+.vp-tabs span.on{background:#0F766E;color:#FFFFFF}
+.vp-grid{display:grid;grid-template-columns:1fr 1.4fr 1.4fr;gap:12px;background:#FFFFFF;border-radius:12px 12px 0 0;padding:18px;height:170px}
+.vp-kpi{display:grid;gap:10px;align-content:start}
+.vp-kpi i{display:block;height:40px;border-radius:8px;background:#E6F4F1}
+.vp-bars{display:flex;align-items:flex-end;gap:8px;border-bottom:2px solid #CFE3DF}
+.vp-bars i{flex:1;background:#0F766E;border-radius:3px 3px 0 0}
+.vp-bars i:nth-child(odd){background:#5DB3A6}
+.vp-line svg{width:100%;height:100%}
+.vp-line path{fill:none;stroke:#0F766E;stroke-width:3}
+.viz-cta{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:22px 28px}
+.viz-cta b{display:block;font-family:var(--head);font-stretch:112%;font-size:22px;line-height:1.2;margin-bottom:4px}
+.viz-cta span:not(.btn){display:block;color:var(--quiet);font-size:15px;max-width:520px}
+@media (max-width:560px){.viz-prev{padding:18px 18px 0}.vp-grid{grid-template-columns:1fr 1fr;height:130px}.vp-line{display:none}.viz-cta{padding:18px}}
+.hepc{max-width:1240px;margin:0 auto;padding:0 28px 40px}
+.hepc .row p{color:var(--quiet)}
+@media (max-width:560px){.hepc{padding:0 18px 40px}}
+/* hep c case study */
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--pen);margin:0 0 12px}
+.viz-show{display:grid;gap:16px;margin:32px 0 10px;max-width:948px;background:#E9F4F3;border:1.5px solid #CFE3E0;border-radius:20px;padding:22px;text-decoration:none;color:#102A29;transition:border-color .15s,box-shadow .15s}
+.viz-show:hover{border-color:#0E7C7B;box-shadow:0 10px 28px rgba(16,42,41,.12)}
+.viz-live:hover{border-color:#CFE3E0;box-shadow:none}
+.viz-frame{position:relative;width:100%;aspect-ratio:16/11;min-height:520px;border-radius:12px;overflow:hidden;background:#fff}
+.viz-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media (max-width:640px){.viz-frame{aspect-ratio:auto;height:640px;min-height:0}}
+.viz-show:focus-visible{outline:2px solid #0E7C7B;outline-offset:4px}
+.vs-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.vs-kicker{display:block;font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#0A5C5B}
+.vs-title{display:block;font-family:var(--head);font-stretch:112%;font-weight:700;font-size:clamp(20px,2.4vw,26px);line-height:1.2;color:#102A29;margin-top:4px}
+.vs-badge{font-size:11px;font-weight:700;letter-spacing:.08em;color:#0A5C5B;border:1.5px solid #0A5C5B;border-radius:6px;padding:4px 8px;white-space:nowrap}
+.vs-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.vs-tabs span{font-size:13px;font-weight:600;padding:5px 14px;border-radius:999px;background:#FFFFFF;color:#0A5C5B;border:1px solid #CFE3E0}
+.vs-tabs span.on{background:#0E7C7B;color:#FFFFFF;border-color:#0E7C7B}
+.vs-chart{background:#FFFFFF;border:1px solid #CFE3E0;border-radius:12px;padding:14px 16px}
+.vs-chart-t{margin:0 0 6px;font-size:14px;font-weight:600;color:#233B3A}
+.vs-chart svg{display:block;width:100%;height:auto}
+.vs-cta{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.vs-txt{font-size:15px;line-height:1.45;color:#233B3A;max-width:520px}
+.vs-btn{display:inline-block;font-weight:600;font-size:15px;color:#FFFFFF;background:#0E7C7B;padding:12px 20px;border-radius:999px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(160px,100%),1fr));gap:18px 24px;margin:28px 0 0;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);max-width:948px}
+.facts dt{font-size:13px;font-weight:600;color:var(--quiet)}
+.facts dd{margin:2px 0 0;font-size:15.5px;line-height:1.45}
+.skills4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:948px}
+.skills4 a{display:flex;flex-direction:column;gap:6px;background:var(--lilac);border-radius:14px;padding:18px;text-decoration:none;transition:background .15s}
+.skills4 a:hover{background:var(--lavender)}
+.skills4 b{font-family:var(--head);font-stretch:112%;font-size:17px;line-height:1.2}
+.skills4 span{font-size:14.5px;line-height:1.45;color:var(--quiet)}
+.skills4 em{font-style:normal;font-weight:600;font-size:14px;margin-top:auto;padding-top:6px}
+.metric3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:948px;margin:22px 0 24px}
+.metric3 .tile b{font-size:18px;line-height:1.25;margin:4px 0 8px}
+.skill-chips{list-style:none;margin:0 0 6px;padding:0;display:flex;flex-wrap:wrap;gap:8px;max-width:948px}
+.skill-chips li{font-size:14px;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--lilac);box-shadow:inset 0 0 0 1px var(--lavender)}
+.hurdles{margin:0 0 1em;padding-left:20px;display:grid;gap:8px}
+.hurdles li{line-height:1.55}
+.tk{display:block;font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--pen)}
+@media (max-width:900px){.skills4{grid-template-columns:repeat(2,minmax(0,1fr))}.metric3{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){.skills4{grid-template-columns:minmax(0,1fr)}.viz-show{padding:14px}}
+/* instructure case study */
+.recs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:948px;margin:24px 0 12px}
+.rec{border:1.5px solid var(--lavender);border-radius:14px;padding:18px;background:var(--paper);display:flex;flex-direction:column;gap:6px}
+.rec.adopted{background:var(--hl);border-color:transparent}
+.rec .pill{align-self:flex-start;margin-bottom:4px}
+.rec.adopted .pill{background:var(--paper)}
+.rec b{font-family:var(--head);font-stretch:112%;font-size:18px;line-height:1.25}
+.rec .d{font-size:14.5px;line-height:1.5}
+.rec small{font-size:13px;font-weight:600;color:var(--quiet);margin-top:auto;padding-top:8px}
+.rec.adopted small{color:var(--ink)}
+.findings{list-style:none;padding:0;margin:24px 0 8px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:948px}
+.findings li{background:var(--lilac);border-radius:14px;padding:18px}
+.findings li.mine{background:var(--hl)}
+.findings .n{font-family:var(--head);font-weight:800;font-size:26px;line-height:1;display:block;margin-bottom:10px}
+.findings b{display:block;font-family:var(--head);font-stretch:112%;font-size:17px;line-height:1.25;margin-bottom:6px}
+.findings span{display:block;font-size:14.5px;line-height:1.45;color:var(--quiet)}
+.findings li.mine span{color:var(--ink)}
+.who{margin:22px 0 6px;max-width:948px}
+.who p{font-size:14px;font-weight:600;color:var(--quiet);margin:0 0 8px}
+@media (max-width:900px){.recs,.findings{grid-template-columns:minmax(0,1fr)}}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:948px;margin:24px 0 8px}
+.kpi{background:var(--lilac);border-radius:14px;padding:16px 18px}
+.kpi.hot{background:var(--hl)}
+.kpi b{display:block;font-family:var(--head);font-stretch:125%;font-weight:800;font-size:32px;line-height:1.05;letter-spacing:-0.02em}
+.kpi span{display:block;font-size:13.5px;line-height:1.4;color:var(--quiet);margin-top:6px}
+.kpi.hot span{color:var(--ink)}
+.skills6{grid-template-columns:repeat(3,minmax(0,1fr))}
+.opp{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:14px;max-width:948px;margin:20px 0 8px}
+.opp-chart,.smap-chart{margin:0;background:var(--lilac);border-radius:16px;padding:16px 16px 12px}
+.opp-chart svg,.smap-chart svg{display:block;width:100%;height:auto}
+.opp-chart .ax{stroke:var(--quiet);stroke-width:1.2}
+.opp-chart .l1{fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round}
+.opp-chart .l2{fill:none;stroke:var(--pen);stroke-width:3.5;stroke-linecap:round}
+.opp-chart .d1{fill:var(--ink)} .opp-chart .d2{fill:var(--pen)}
+.opp-chart text{font-family:var(--body);font-size:15px}
+.opp-chart .lb1{fill:var(--ink);font-weight:600} .opp-chart .lb2{fill:var(--pen);font-weight:700}
+.opp-chart .tk2{fill:var(--quiet);font-size:13px}
+.opp-side{display:grid;gap:12px}
+.opp-card{border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;justify-content:center}
+.opp-card.risk{box-shadow:inset 0 0 0 1.5px var(--lavender)}
+.opp-card.gain{background:var(--hl)}
+.opp-card small{font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--quiet);margin-bottom:6px}
+.opp-card.gain small{color:var(--ink)}
+.opp-card b{font-family:var(--head);font-stretch:112%;font-size:19px;line-height:1.3}
+.funnel{display:grid;gap:8px;max-width:948px;margin:20px 0 22px}
+.fn{justify-self:center;width:100%;border-radius:12px;padding:12px 18px;background:var(--lilac);text-align:center}
+.fn:nth-child(2){width:82%;background:var(--lavender)}
+.fn:nth-child(3){width:62%;background:var(--hl)}
+.fn b{display:block;font-family:var(--head);font-stretch:112%;font-size:16.5px;line-height:1.3}
+.fn span{display:block;font-size:13.5px;line-height:1.4;color:var(--quiet)}
+.fn.on span{color:var(--ink)}
+.sc-wrap{overflow-x:auto;min-width:0}
+.sc-wrap .score{min-width:560px;margin-top:0}
+.pscore{min-width:680px!important}
+.pscore .score-row{grid-template-columns:minmax(0,1.5fr) repeat(5,minmax(0,.62fr)) 92px}
+.smap{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:14px;max-width:948px;margin:20px 0 8px;align-items:start}
+.smap-chart .frame{fill:var(--paper);stroke:var(--lavender);stroke-width:1.2}
+.smap-chart .mid{stroke:var(--lavender);stroke-dasharray:5 5}
+.smap-chart .pt{fill:var(--paper);stroke:var(--quiet);stroke-width:1.6}
+.smap-chart .pt.on{fill:var(--pen);stroke:var(--pen)}
+.smap-chart text{font-family:var(--body);font-size:13.5px;fill:var(--quiet)}
+.smap-chart text.on{fill:var(--ink);font-weight:700}
+.smap-chart .axl{font-size:12.5px;font-weight:600}
+.lg{display:inline-block;width:10px;height:10px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--quiet);margin:0 4px 0 10px;vertical-align:-1px}
+.lg.on{background:var(--pen);box-shadow:none;margin-left:0}
+.ibars{border:1.5px solid var(--lavender);border-radius:16px;padding:18px}
+.ib-t{font-size:13px;font-weight:600;color:var(--quiet);margin:0 0 10px}
+.ib{display:grid;grid-template-columns:minmax(0,1fr) 22px;gap:2px 8px;margin-bottom:10px;align-items:center}
+.ib span{grid-column:1/-1;font-size:14px;line-height:1.3}
+.ib i{display:block;height:12px;border-radius:6px;background:var(--pen)}
+.ib b{font-family:var(--head);font-weight:800;font-size:15px;text-align:right}
+.insights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:948px;margin:22px 0 8px}
+.ins{background:var(--lilac);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.ins.mine{background:var(--hl)}
+.ins .n{font-family:var(--head);font-weight:800;font-size:24px;line-height:1}
+.ins>b{font-family:var(--head);font-stretch:112%;font-size:17px;line-height:1.25}
+.ev2{background:var(--paper);border-radius:10px;padding:10px 12px}
+.ev2 small{display:block;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--pen);margin-bottom:2px}
+.ev2 p{margin:0;font-size:14px;line-height:1.45}
+.ins .so{margin:auto 0 0;font-size:14px;font-weight:700;line-height:1.4}
+.why2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:948px;margin:18px 0 8px}
+.rec .kv{margin:0;font-size:14px;line-height:1.45}
+.rec .kv .k{display:block;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--quiet)}
+.rec.adopted .kv .k{color:var(--ink)}
+@media (max-width:900px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.skills6{grid-template-columns:repeat(2,minmax(0,1fr))}.opp,.smap,.insights,.why2{grid-template-columns:minmax(0,1fr)}.fn:nth-child(2){width:90%}.fn:nth-child(3){width:80%}}
+@media (max-width:560px){.skills6{grid-template-columns:minmax(0,1fr)}}
+.brief{max-width:948px;margin:28px 0 0}
+.brief>div{display:grid;grid-template-columns:180px minmax(0,1fr);gap:20px;padding:16px 0;border-top:1px solid var(--line)}
+.brief>div:last-child{border-bottom:1px solid var(--line)}
+.brief dt{font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--pen);padding-top:3px}
+.brief dd{margin:0;font-size:17px;line-height:1.6;max-width:680px}
+.shead{align-items:end;margin-bottom:4px}
+.shead h2{margin-bottom:0!important}
+.sk p{font-size:12px;font-weight:600;color:var(--quiet);margin:0 0 6px}
+.sk .skill-chips{gap:6px}
+.sk .skill-chips li{font-size:12.5px;padding:4px 10px;background:var(--paper);box-shadow:inset 0 0 0 1.5px var(--pen);color:var(--pen)}
+.opp-chart .now{stroke:var(--quiet);stroke-width:1.2;stroke-dasharray:4 5}
+.opp-chart .shift{fill:none;stroke:var(--quiet);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.opp-chart .sh{fill:var(--quiet);font-size:12.5px;font-style:italic}
+.opp-chart .tag1{fill:var(--ink);font-weight:700;font-size:15px}
+.opp-chart .tag2{fill:var(--pen);font-weight:700;font-size:15px}
+.opp-chart .sub1,.opp-chart .sub2{fill:var(--quiet);font-size:12.5px}
+.opp-chart .tk2.b{fill:var(--ink);font-weight:600}
+.opp-card.mine{background:var(--lilac)}
+.opp .opp-chart{display:flex;flex-direction:column;justify-content:center}
+.opp-card.mine small{color:var(--pen)}
+.outcome{max-width:948px;background:var(--hl);border-radius:16px;padding:22px 24px;margin:4px 0 14px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.outcome b{font-family:var(--head);font-stretch:125%;font-weight:800;font-size:clamp(28px,3.4vw,40px);line-height:1.05;letter-spacing:-0.02em}
+.outcome span{font-size:17px;line-height:1.5;flex:1;min-width:240px}
+@media (max-width:1180px){.sk{padding:12px 0 0}.shead{align-items:start}}
+@media (max-width:700px){.brief>div{grid-template-columns:minmax(0,1fr);gap:4px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="#/">Xandra Bai</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#/work" data-nav="work">Work</a>
+      <a href="#/about" data-nav="about">About</a>
+      <a href="#/resume" data-nav="resume">Resume</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+
+<!-- HOME -->
+<div class="page" data-page="home">
+<section class="o-home" aria-labelledby="o-title">
+<h1 id="o-title" class="o-sr">Xandra Bai, product manager: work experience and my own product</h1>
+<div class="o-stage">
+
+<svg class="o-lines" viewBox="0 0 1360 760" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+<ellipse cx="520" cy="410" rx="300" ry="290" class="o-orbit"></ellipse>
+<path id="o-ring-ind" d="M 380 650 A 290 280 0 0 0 660 650" fill="none"></path>
+<text class="o-ringlabel"><textPath href="#o-ring-ind" startOffset="50%" text-anchor="middle">Work experience</textPath></text>
+<circle cx="1130" cy="210" r="130" class="o-ownring"></circle>
+<path id="o-ring-own" d="M 1000 210 A 130 130 0 0 1 1260 210" fill="none"></path>
+<text class="o-ringlabel"><textPath href="#o-ring-own" startOffset="50%" text-anchor="middle">My own product</textPath></text>
+<path d="M 620 395 C 740 320, 880 250, 1000 232" class="o-l o-l-own"></path>
+<line x1="260" y1="555" x2="520" y2="410" class="o-l o-l-ux"></line>
+<line x1="780" y1="555" x2="520" y2="410" class="o-l o-l-data"></line>
+<line x1="520" y1="120" x2="520" y2="410" class="o-l o-l-biz"></line>
+<line x1="520" y1="120" x2="520" y2="410" class="o-l-flow"></line>
+</svg>
+
+<div class="o-core" style="display:flex;align-items:center;justify-content:center">
+<span class="o-core-ring" style="inset:-3.3824cqw;border:0.1103cqw solid var(--line)"></span>
+<span class="o-core-ring" style="inset:-1.6176cqw;border:0.1103cqw solid var(--lavender)"></span>
+<span class="o-core-pulse" style="inset:0;border:0.1471cqw solid var(--pen)"></span>
+<div style="position:absolute;inset:0;border-radius:50%;background:var(--o-core);box-shadow:0 1.3235cqw 2.9412cqw rgba(48,22,120,0.32), inset 0 -0.8824cqw 1.7647cqw rgba(20,8,70,0.3), inset 0 0.5882cqw 1.3235cqw rgba(255,255,255,0.18)"></div>
+<span class="o-core-ring" style="inset:0.7353cqw;border:0.1103cqw solid rgba(255,255,255,0.35)"></span>
+<p style="position:relative;margin:0;font-size:3.0882cqw;font-weight:820;font-stretch:108%;letter-spacing:-0.0588cqw;line-height:1;color:#FFFFFF">Product</p>
+</div>
+
+<a href="#/work/novartis" class="o-sat o-sat-biz o-float-1" aria-label="Open case study. Business: AI call-note summaries, AI product manager internship at Novartis" data-orbit="biz" style="">
+<div style="width:24.2647cqw;display:flex;flex-direction:column;align-items:flex-end;text-align:right;gap:0.2941cqw">
+<span style="font-size:2.5cqw;line-height:2.7941cqw;font-weight:780;font-stretch:115%;letter-spacing:-0.0294cqw;color:var(--ink)">Business</span>
+<span style="display:inline-flex;align-items:center;height:2.9412cqw;margin:0.1471cqw 0 0.2941cqw;padding:0 1.4706cqw;border-radius:73.4559cqw;background:var(--paper);border:0.1103cqw solid var(--lavender);box-sizing:border-box;font-size:1.3235cqw;font-weight:720;font-stretch:106%;color:var(--ink);box-shadow:0 0.1471cqw 0.5882cqw rgba(48,22,120,0.12)">Novartis</span>
+<span style="font-size:1.3971cqw;font-weight:680;line-height:1.25;color:var(--ink)">AI call-note summaries</span>
+<span style="font-size:max(1.1029cqw, 12px);font-weight:500;color:var(--quiet)">AI product manager intern</span>
+</div>
+<div class="o-hole" style="width:14.7059cqw;height:14.7059cqw;margin-top:0.5147cqw">
+<div class="o-port" style="background:#E4EAF6">
+<div class="o-ill" aria-hidden="true" style="transform:scale(1.093)">
+<div style="position:absolute;left:1.7647cqw;top:2.2059cqw;width:9.1176cqw;height:8.2353cqw;border-radius:0.5882cqw;background:#FFFFFF;box-shadow:0 0.1471cqw 0.4412cqw rgba(40,64,120,0.14)">
+<span style="position:absolute;left:0.7353cqw;top:0.7353cqw;width:1.0294cqw;height:1.0294cqw;border-radius:50%;background:#A9B6D3"></span>
+<span style="position:absolute;left:2.2059cqw;top:0.8088cqw;width:3.3824cqw;height:0.3676cqw;border-radius:0.1471cqw;background:#3E64B5"></span>
+<span style="position:absolute;left:2.2059cqw;top:1.4706cqw;width:2.2059cqw;height:0.2941cqw;border-radius:0.1471cqw;background:#C7D1E6"></span>
+<span style="position:absolute;left:0.7353cqw;top:2.5cqw;width:7.3529cqw;height:0.2941cqw;border-radius:0.1471cqw;background:#DCE2EE"></span>
+<span style="position:absolute;left:0.7353cqw;top:3.0882cqw;width:6.3235cqw;height:0.2941cqw;border-radius:0.1471cqw;background:#DCE2EE"></span>
+<span style="position:absolute;left:0.7353cqw;top:3.6765cqw;width:6.9118cqw;height:0.2941cqw;border-radius:0.1471cqw;background:#DCE2EE"></span>
+<div style="position:absolute;left:0.5882cqw;top:4.5588cqw;width:7.9412cqw;height:2.9412cqw;box-sizing:border-box;border:0.0735cqw solid #C2B1F7;border-radius:0.4412cqw;background:#F1ECFF">
+<svg style="position:absolute;left:0.5147cqw;top:0.5147cqw;width:0.8824cqw;height:0.8824cqw" viewBox="0 0 12 12"><path d="M6 0 L7.4 4.6 L12 6 L7.4 7.4 L6 12 L4.6 7.4 L0 6 L4.6 4.6 Z" style="fill:var(--pen)"></path></svg>
+<span style="position:absolute;left:1.7647cqw;top:0.5882cqw;width:5.1471cqw;height:0.2941cqw;border-radius:0.1471cqw;background:#8B6FE8"></span>
+<span style="position:absolute;left:1.7647cqw;top:1.25cqw;width:4.1176cqw;height:0.2941cqw;border-radius:0.1471cqw;background:#B9A7F5"></span>
+<span style="position:absolute;left:1.7647cqw;top:1.9118cqw;width:4.5588cqw;height:0.2941cqw;border-radius:0.1471cqw;background:#B9A7F5"></span>
+</div>
+</div>
+</div>
+</div>
+<span class="o-open" aria-hidden="true" style="left:11.1029cqw;top:0.6618cqw;width:2.9412cqw;height:2.9412cqw;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--o-core);border:0.2206cqw solid var(--paper);box-sizing:border-box;box-shadow:0 0.2941cqw 0.8824cqw rgba(48,22,120,0.25)"><svg viewBox="0 0 24 24" style="width:1.25cqw;height:1.25cqw"><path d="M7 17 L17 7 M9 7 H17 V15" style="fill:none;stroke:#FFFFFF;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round"></path></svg></span>
+</div>
+</a>
+
+
+<a href="#/work/instructure" class="o-sat o-sat-ux o-float-2" aria-label="Open case study. User experience: Canvas growth strategy, product manager internship at Instructure" data-orbit="ux" style="">
+<div class="o-hole" style="width:10.2941cqw;height:10.2941cqw">
+<div class="o-port" style="background:#F2EDFF;border-width:0.3676cqw">
+<div class="o-ill" aria-hidden="true" style="transform:scale(0.756)">
+<span style="position:absolute;left:2.2059cqw;top:2.2059cqw;width:2.5cqw;height:0.2941cqw;border-radius:0.1471cqw;background:#8C82AE"></span>
+<span style="position:absolute;left:7.0588cqw;top:2.0588cqw;width:2.2059cqw;height:0.2941cqw;border-radius:0.1471cqw;background:#8C82AE"></span>
+<span style="position:absolute;left:4.4118cqw;top:7.3529cqw;width:2.3529cqw;height:0.2941cqw;border-radius:0.1471cqw;background:#8C82AE"></span>
+<span style="position:absolute;left:1.9118cqw;top:2.9412cqw;width:2.0588cqw;height:1.9118cqw;background:#FFDF85;transform:rotate(-5deg)"></span>
+<span style="position:absolute;left:4.2647cqw;top:3.0882cqw;width:2.0588cqw;height:1.9118cqw;background:#FFDF85;transform:rotate(3deg)"></span>
+<span style="position:absolute;left:2.9412cqw;top:5.1471cqw;width:2.0588cqw;height:1.9118cqw;background:#FFC4D6;transform:rotate(-2deg)"></span>
+<span style="position:absolute;left:6.9118cqw;top:2.7941cqw;width:2.0588cqw;height:1.9118cqw;background:#BFE0FF;transform:rotate(4deg)"></span>
+<span style="position:absolute;left:9.1176cqw;top:3.3824cqw;width:2.0588cqw;height:1.9118cqw;background:#BFE0FF;transform:rotate(-3deg)"></span>
+<span style="position:absolute;left:3.9706cqw;top:8.0882cqw;width:2.0588cqw;height:1.9118cqw;background:#FFC4D6;transform:rotate(3deg)"></span>
+<span style="position:absolute;left:6.3235cqw;top:7.9412cqw;width:2.0588cqw;height:1.9118cqw;background:#FFDF85;transform:rotate(-4deg)"></span>
+<span style="position:absolute;left:8.5294cqw;top:8.3824cqw;width:2.0588cqw;height:1.9118cqw;background:#BFE0FF;transform:rotate(2deg)"></span>
+</div>
+</div>
+<span class="o-open" aria-hidden="true" style="left:7.6471cqw;top:0.2941cqw;width:2.3529cqw;height:2.3529cqw;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--o-core);border:0.2206cqw solid var(--paper);box-sizing:border-box;box-shadow:0 0.2941cqw 0.8824cqw rgba(48,22,120,0.25)"><svg viewBox="0 0 24 24" style="width:1.0294cqw;height:1.0294cqw"><path d="M7 17 L17 7 M9 7 H17 V15" style="fill:none;stroke:#FFFFFF;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"></path></svg></span>
+</div>
+<div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:0.1471cqw;margin-top:0.7353cqw"><span style="font-size: 2.0588cqw; line-height: 2.3529cqw; font-weight: 780; font-stretch: 112%; letter-spacing: -0.0221cqw; color: var(--ink)">User experience</span><span style="display: inline-flex; align-items: center; height: 2.5cqw; margin: 0.2206cqw 0px; padding: 0px 1.1765cqw; border-radius: 73.4559cqw; background: var(--paper); border: 0.1103cqw solid var(--lavender); box-sizing: border-box; font-size: 1.1765cqw; font-weight: 720; font-stretch: 106%; color: var(--ink)">Instructure</span><span style="font-size: 1.1765cqw; font-weight: 650; line-height: 1.25; color: var(--ink)">Canvas growth strategy</span><span style="font-size:max(1.0294cqw, 12px); color: var(--quiet)">Product Manager Intern</span></div>
+</a>
+
+
+<a href="#/work/hepc" class="o-sat o-sat-data o-float-3" aria-label="Open case study. Data: infant Hep C screening dashboard, data analyst internship at Michigan Medicine" data-orbit="data" style="">
+<div class="o-hole" style="width:10.2941cqw;height:10.2941cqw">
+<div class="o-port" style="background:#D7EFEA;border-width:0.3676cqw">
+<div class="o-ill" aria-hidden="true" style="transform:scale(0.756)">
+<div style="position:absolute;left:1.7647cqw;top:2.3529cqw;width:9.1176cqw;height:7.9412cqw;border-radius:0.5882cqw;background:#FFFFFF;box-shadow:0 0.1471cqw 0.4412cqw rgba(15,94,88,0.15)">
+<span style="position:absolute;left:0.7353cqw;top:0.7353cqw;width:3.2353cqw;height:0.3676cqw;border-radius:0.1471cqw;background:#0F766E"></span>
+<span style="position:absolute;left:0.7353cqw;top:1.3971cqw;width:2.0588cqw;height:0.2941cqw;border-radius:0.1471cqw;background:#A9D8D0"></span>
+<svg style="position:absolute;left:6.4706cqw;top:0.5147cqw;width:1.9118cqw;height:1.9118cqw" viewBox="0 0 26 26"><circle cx="13" cy="13" r="9" style="fill:none;stroke:#D3ECE8;stroke-width:5"></circle><circle cx="13" cy="13" r="9" transform="rotate(-90 13 13)" style="fill:none;stroke:#0F766E;stroke-width:5;stroke-dasharray:38 57"></circle></svg>
+<span style="position:absolute;left:0.8824cqw;top:5.4412cqw;width:0.7353cqw;height:1.6176cqw;background:#5DB3A6"></span>
+<span style="position:absolute;left:2.0588cqw;top:4.5588cqw;width:0.7353cqw;height:2.5cqw;background:#0F766E"></span>
+<span style="position:absolute;left:3.2353cqw;top:5.0cqw;width:0.7353cqw;height:2.0588cqw;background:#5DB3A6"></span>
+<span style="position:absolute;left:4.4118cqw;top:3.6765cqw;width:0.7353cqw;height:3.3824cqw;background:#0F766E"></span>
+<span style="position:absolute;left:5.5882cqw;top:4.2647cqw;width:0.7353cqw;height:2.7941cqw;background:#5DB3A6"></span>
+<span style="position:absolute;left:6.7647cqw;top:3.0882cqw;width:0.7353cqw;height:3.9706cqw;background:#0F766E"></span>
+<span style="position:absolute;left:0.7353cqw;top:7.0588cqw;width:7.6471cqw;height:0.1471cqw;background:#CFE3DF"></span>
+</div>
+</div>
+</div>
+<span class="o-open" aria-hidden="true" style="left:7.6471cqw;top:0.2941cqw;width:2.3529cqw;height:2.3529cqw;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--o-core);border:0.2206cqw solid var(--paper);box-sizing:border-box;box-shadow:0 0.2941cqw 0.8824cqw rgba(48,22,120,0.25)"><svg viewBox="0 0 24 24" style="width:1.0294cqw;height:1.0294cqw"><path d="M7 17 L17 7 M9 7 H17 V15" style="fill:none;stroke:#FFFFFF;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"></path></svg></span>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.1471cqw; margin-top: 0.7353cqw; width: 349px"><span style="font-size: 2.0588cqw; line-height: 2.3529cqw; font-weight: 780; font-stretch: 112%; letter-spacing: -0.0221cqw; color: var(--ink)">Data</span><span style="display: inline-flex; align-items: center; height: 2.5cqw; margin: 0.2206cqw 0px; padding: 0px 1.1765cqw; border-radius: 73.4559cqw; background: var(--paper); border: 0.1103cqw solid var(--lavender); box-sizing: border-box; font-size: 1.1765cqw; font-weight: 720; font-stretch: 106%; color: var(--ink)">Michigan Medicine</span><span style="font-size: 1.1765cqw; font-weight: 650; line-height: 1.25; color: var(--ink)">Hep C Screening Policy Impact Evaluation</span><span style="font-size:max(1.0294cqw, 12px); color: var(--quiet)">Data analyst intern</span></div>
+</a>
+
+
+<a href="#/work" class="o-sat o-sat-own o-float-4" aria-label="Open case study. Product thinking: Emotion canvas app, my own product built with a team of five" data-orbit="own" style="">
+<div class="o-hole" style="width:12.0588cqw;height:12.0588cqw">
+<div class="o-port" style="background:#FFE6D8">
+<div class="o-ill" aria-hidden="true" style="transform:scale(0.884)">
+<div style="position:absolute;left:3.9706cqw;top:1.4706cqw;width:4.7059cqw;height:9.7059cqw;box-sizing:border-box;border:0.2206cqw solid #2A2140;border-radius:1.0294cqw;background:#FFFDF9;overflow:hidden">
+<span style="position:absolute;left:1.5441cqw;top:0.3676cqw;width:1.1765cqw;height:0.2941cqw;border-radius:0.1471cqw;background:#2A2140"></span>
+<span style="position:absolute;left:0.5882cqw;top:1.25cqw;width:2.3529cqw;height:0.2941cqw;border-radius:0.1471cqw;background:#CFC6E0"></span>
+<span style="position:absolute;left:0.5882cqw;top:1.8382cqw;width:1.6176cqw;height:0.2206cqw;border-radius:0.1471cqw;background:#E2DCEC"></span>
+<span style="position:absolute;left:0.3676cqw;top:2.6471cqw;width:2.3529cqw;height:2.3529cqw;border-radius:50%;background:#FFB083;mix-blend-mode:multiply"></span>
+<span style="position:absolute;left:1.6176cqw;top:3.6765cqw;width:2.2059cqw;height:2.2059cqw;border-radius:50%;background:#C5B3FF;mix-blend-mode:multiply"></span>
+<span style="position:absolute;left:0.5882cqw;top:5.0cqw;width:1.9118cqw;height:1.9118cqw;border-radius:50%;background:#8ED2C2;mix-blend-mode:multiply"></span>
+<span style="position:absolute;left:0.5882cqw;top:7.6471cqw;width:3.0882cqw;height:0.9559cqw;border-radius:0.5147cqw;background:var(--pen)"></span>
+</div>
+</div>
+</div>
+<span class="o-open" aria-hidden="true" style="left:9.0441cqw;top:0.5147cqw;width:2.5cqw;height:2.5cqw;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--o-core);border:0.2206cqw solid var(--paper);box-sizing:border-box;box-shadow:0 0.2941cqw 0.8824cqw rgba(48,22,120,0.25)"><svg viewBox="0 0 24 24" style="width:1.1029cqw;height:1.1029cqw"><path d="M7 17 L17 7 M9 7 H17 V15" style="fill:none;stroke:#FFFFFF;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"></path></svg></span>
+</div>
+<div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:0.2206cqw;margin-top:4.5588cqw">
+<span style="font-size:2.0588cqw;line-height:2.3529cqw;font-weight:780;font-stretch:115%;letter-spacing:-0.0221cqw;color:var(--ink)">Product thinking</span>
+<span style="font-size:1.3235cqw;font-weight:680;line-height:1.25;color:var(--ink)">Emotion canvas app</span>
+<span style="font-size:max(1.0294cqw, 12px);color:var(--quiet)">Built with a team of five</span>
+</div>
+</a>
+
+<div class="o-anno o-float-4" aria-hidden="true" style="left: 72.0588cqw; top: 33.0147cqw; width: 22.0588cqw; align-items: center; text-align: center; position: absolute"><span style="font-size:max(1.0294cqw, 12px); line-height: 1.25; font-weight: 650; color: var(--quiet)"><span class="o-hl" style="color: var(--ink); font-size: 1.3235cqw; line-height: 1.2; font-stretch: 106%; display: inline !important">Product</span></span><span style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4412cqw 0.8824cqw"><b class="o-hl" style="font-size: 1.3235cqw; line-height: 1.2; font-weight: 740; font-stretch: 106%; color: var(--ink)">Development</b><b class="o-hl" style="font-size: 1.3235cqw; line-height: 1.2; font-weight: 740; font-stretch: 106%; color: var(--ink)">UX</b><b class="o-hl" style="font-size: 1.3235cqw; line-height: 1.2; font-weight: 740; font-stretch: 106%; color: var(--ink)">Business</b></span></div>
+
+</div>
+<div class="o-flow">
+<div class="o-f-core" style="position:relative;width:96px;height:96px;margin:24px 0 22px;display:flex;align-items:center;justify-content:center">
+<span class="o-core-ring" style="inset:-22px;border:1.5px solid var(--line)"></span>
+<span class="o-core-ring" style="inset:-11px;border:1.5px solid var(--lavender)"></span>
+<span class="o-core-pulse" style="inset:0;border:2px solid var(--pen)"></span>
+<div style="position:absolute;inset:0;border-radius:50%;background:var(--o-core);box-shadow:0 10px 24px rgba(48,22,120,0.32), inset 0 -6px 14px rgba(20,8,70,0.3), inset 0 4px 10px rgba(255,255,255,0.18)"></div>
+<span class="o-core-ring" style="inset:5px;border:1px solid rgba(255,255,255,0.35)"></span>
+<p style="position:relative;margin:0;font-size:21px;font-weight:820;font-stretch:108%;letter-spacing:-0.4px;color:#FFFFFF">Product</p>
+</div>
+
+<span class="o-f-line" style="border-left:4px solid var(--o-strong);height:40px"></span>
+<p class="o-f-label">Work experience</p>
+
+<a href="#/work/novartis" class="o-f-item o-f-feature" aria-label="Open case study. Business: AI call-note summaries, AI product manager internship at Novartis">
+<div class="o-f-port o-bob" style="width:150px;height:150px">
+<div class="o-port" style="background:#E4EAF6;border-width:5px;box-shadow:0 0 0 1.5px var(--lavender), 0 6px 16px rgba(48,22,120,0.08)">
+<div class="o-ill" aria-hidden="true" style="width:172px;height:172px;transform:scale(0.814)">
+<div style="position:absolute;left:24px;top:30px;width:124px;height:112px;border-radius:8px;background:#FFFFFF;box-shadow:0 2px 6px rgba(40,64,120,0.14)">
+<span style="position:absolute;left:10px;top:10px;width:14px;height:14px;border-radius:50%;background:#A9B6D3"></span>
+<span style="position:absolute;left:30px;top:11px;width:46px;height:5px;border-radius:2px;background:#3E64B5"></span>
+<span style="position:absolute;left:30px;top:20px;width:30px;height:4px;border-radius:2px;background:#C7D1E6"></span>
+<span style="position:absolute;left:10px;top:34px;width:100px;height:4px;border-radius:2px;background:#DCE2EE"></span>
+<span style="position:absolute;left:10px;top:42px;width:86px;height:4px;border-radius:2px;background:#DCE2EE"></span>
+<span style="position:absolute;left:10px;top:50px;width:94px;height:4px;border-radius:2px;background:#DCE2EE"></span>
+<div style="position:absolute;left:8px;top:62px;width:108px;height:40px;box-sizing:border-box;border:1px solid #C2B1F7;border-radius:6px;background:#F1ECFF">
+<svg style="position:absolute;left:7px;top:7px;width:12px;height:12px" viewBox="0 0 12 12"><path d="M6 0 L7.4 4.6 L12 6 L7.4 7.4 L6 12 L4.6 7.4 L0 6 L4.6 4.6 Z" style="fill:var(--pen)"></path></svg>
+<span style="position:absolute;left:24px;top:8px;width:70px;height:4px;border-radius:2px;background:#8B6FE8"></span>
+<span style="position:absolute;left:24px;top:17px;width:56px;height:4px;border-radius:2px;background:#B9A7F5"></span>
+<span style="position:absolute;left:24px;top:26px;width:62px;height:4px;border-radius:2px;background:#B9A7F5"></span>
+</div>
+</div>
+</div>
+</div>
+<span class="o-f-open" aria-hidden="true" style="left:110px;top:6px;width:34px;height:34px;background:var(--pen)"><svg viewBox="0 0 24 24" style="width:15px;height:15px"><path d="M7 17 L17 7 M9 7 H17 V15" style="fill:none;stroke:#FFFFFF;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"></path></svg></span>
+</div>
+<span style="margin-top:14px;font-size:32px;line-height:36px;font-weight:780;font-stretch:115%;letter-spacing:-0.4px;color:var(--ink)">Business</span>
+<span class="o-f-pill" style="height:38px;font-size:17px">Novartis</span>
+<span style="font-size:18px;font-weight:680;line-height:1.3;color:var(--ink)">AI call-note summaries</span>
+<span style="font-size:15px;color:var(--quiet)">AI product manager intern</span>
+</a>
+
+<span class="o-f-line" style="border-left:2px dashed var(--o-line);height:40px"></span>
+
+<div class="o-f-grid">
+<a href="#/work/instructure" class="o-f-item" aria-label="Open case study. User experience: Canvas growth strategy, product manager internship at Instructure">
+<div class="o-f-port o-bob" style="width:112px;height:112px;animation-delay:-2s">
+<div class="o-port" style="background:#F2EDFF;border-width:4px;box-shadow:0 0 0 1.5px var(--lavender), 0 6px 16px rgba(48,22,120,0.08)">
+<div class="o-ill" aria-hidden="true" style="width:172px;height:172px;transform:scale(0.605)">
+<span style="position:absolute;left:30px;top:30px;width:34px;height:4px;border-radius:2px;background:#8C82AE"></span>
+<span style="position:absolute;left:96px;top:28px;width:30px;height:4px;border-radius:2px;background:#8C82AE"></span>
+<span style="position:absolute;left:60px;top:100px;width:32px;height:4px;border-radius:2px;background:#8C82AE"></span>
+<span style="position:absolute;left:26px;top:40px;width:28px;height:26px;background:#FFDF85;transform:rotate(-5deg)"></span>
+<span style="position:absolute;left:58px;top:42px;width:28px;height:26px;background:#FFDF85;transform:rotate(3deg)"></span>
+<span style="position:absolute;left:40px;top:70px;width:28px;height:26px;background:#FFC4D6;transform:rotate(-2deg)"></span>
+<span style="position:absolute;left:94px;top:38px;width:28px;height:26px;background:#BFE0FF;transform:rotate(4deg)"></span>
+<span style="position:absolute;left:124px;top:46px;width:28px;height:26px;background:#BFE0FF;transform:rotate(-3deg)"></span>
+<span style="position:absolute;left:54px;top:110px;width:28px;height:26px;background:#FFC4D6;transform:rotate(3deg)"></span>
+<span style="position:absolute;left:86px;top:108px;width:28px;height:26px;background:#FFDF85;transform:rotate(-4deg)"></span>
+<span style="position:absolute;left:116px;top:114px;width:28px;height:26px;background:#BFE0FF;transform:rotate(2deg)"></span>
+</div>
+</div>
+<span class="o-f-open" aria-hidden="true" style="left:82px;top:2px;width:30px;height:30px;background:var(--pen)"><svg viewBox="0 0 24 24" style="width:13px;height:13px"><path d="M7 17 L17 7 M9 7 H17 V15" style="fill:none;stroke:#FFFFFF;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"></path></svg></span>
+</div>
+<span style="margin-top:12px;font-size:26px;line-height:30px;font-weight:780;font-stretch:112%;letter-spacing:-0.3px;color:var(--ink)">User experience</span>
+<span class="o-f-pill">Instructure</span>
+<span style="font-size:16px;font-weight:650;line-height:1.3;color:var(--ink)">Canvas growth strategy</span>
+<span style="font-size:14px;color:var(--quiet)">Product Manager Intern</span>
+</a>
+
+<a href="#/work/hepc" class="o-f-item" aria-label="Open case study. Data: Hep C screening policy impact evaluation, data analyst internship at Michigan Medicine">
+<div class="o-f-port o-bob" style="width:112px;height:112px;animation-delay:-4s">
+<div class="o-port" style="background:#D7EFEA;border-width:4px;box-shadow:0 0 0 1.5px var(--lavender), 0 6px 16px rgba(48,22,120,0.08)">
+<div class="o-ill" aria-hidden="true" style="width:172px;height:172px;transform:scale(0.605)">
+<div style="position:absolute;left:24px;top:32px;width:124px;height:108px;border-radius:8px;background:#FFFFFF">
+<span style="position:absolute;left:10px;top:10px;width:44px;height:5px;border-radius:2px;background:#0F766E"></span>
+<span style="position:absolute;left:10px;top:19px;width:28px;height:4px;border-radius:2px;background:#A9D8D0"></span>
+<svg style="position:absolute;left:88px;top:7px;width:26px;height:26px" viewBox="0 0 26 26"><circle cx="13" cy="13" r="9" style="fill:none;stroke:#D3ECE8;stroke-width:5"></circle><circle cx="13" cy="13" r="9" transform="rotate(-90 13 13)" style="fill:none;stroke:#0F766E;stroke-width:5;stroke-dasharray:38 57"></circle></svg>
+<span style="position:absolute;left:12px;top:74px;width:10px;height:22px;background:#5DB3A6"></span>
+<span style="position:absolute;left:28px;top:62px;width:10px;height:34px;background:#0F766E"></span>
+<span style="position:absolute;left:44px;top:68px;width:10px;height:28px;background:#5DB3A6"></span>
+<span style="position:absolute;left:60px;top:50px;width:10px;height:46px;background:#0F766E"></span>
+<span style="position:absolute;left:76px;top:58px;width:10px;height:38px;background:#5DB3A6"></span>
+<span style="position:absolute;left:92px;top:42px;width:10px;height:54px;background:#0F766E"></span>
+<span style="position:absolute;left:10px;top:96px;width:104px;height:2px;background:#CFE3DF"></span>
+</div>
+</div>
+</div>
+<span class="o-f-open" aria-hidden="true" style="left:82px;top:2px;width:30px;height:30px;background:var(--pen)"><svg viewBox="0 0 24 24" style="width:13px;height:13px"><path d="M7 17 L17 7 M9 7 H17 V15" style="fill:none;stroke:#FFFFFF;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"></path></svg></span>
+</div>
+<span style="margin-top:12px;font-size:26px;line-height:30px;font-weight:780;font-stretch:112%;letter-spacing:-0.3px;color:var(--ink)">Data</span>
+<span class="o-f-pill">Michigan Medicine</span>
+<span style="font-size:16px;font-weight:650;line-height:1.3;color:var(--ink)">Hep C Screening Policy Impact Evaluation</span>
+<span style="font-size:14px;color:var(--quiet)">Data analyst intern</span>
+</a>
+</div>
+
+<span class="o-f-line" style="border-left:3px dotted var(--o-strong);height:52px;margin-top:8px"></span>
+<p class="o-f-label">My own product</p>
+
+<a href="#/work" class="o-f-item" aria-label="Open case study. Product thinking: Emotion canvas app, my own product built with a team of five">
+<div class="o-f-port o-bob" style="width:124px;height:124px;margin-top:14px;border-radius:50%;outline:1.8px dashed var(--o-strong);outline-offset:14px;animation-delay:-6s">
+<div class="o-port" style="background:#FFE6D8;border-width:5px;box-shadow:0 0 0 1.5px var(--lavender), 0 6px 16px rgba(48,22,120,0.08)">
+<div class="o-ill" aria-hidden="true" style="width:172px;height:172px;transform:scale(0.663)">
+<div style="position:absolute;left:54px;top:20px;width:64px;height:132px;box-sizing:border-box;border:3px solid #2A2140;border-radius:14px;background:#FFFDF9;overflow:hidden">
+<span style="position:absolute;left:21px;top:5px;width:16px;height:4px;border-radius:2px;background:#2A2140"></span>
+<span style="position:absolute;left:8px;top:17px;width:32px;height:4px;border-radius:2px;background:#CFC6E0"></span>
+<span style="position:absolute;left:5px;top:36px;width:32px;height:32px;border-radius:50%;background:#FFB083;mix-blend-mode:multiply"></span>
+<span style="position:absolute;left:22px;top:50px;width:30px;height:30px;border-radius:50%;background:#C5B3FF;mix-blend-mode:multiply"></span>
+<span style="position:absolute;left:8px;top:68px;width:26px;height:26px;border-radius:50%;background:#8ED2C2;mix-blend-mode:multiply"></span>
+<span style="position:absolute;left:8px;top:104px;width:42px;height:13px;border-radius:7px;background:var(--pen)"></span>
+</div>
+</div>
+</div>
+<span class="o-f-open" aria-hidden="true" style="left:92px;top:4px;width:30px;height:30px;background:var(--pen)"><svg viewBox="0 0 24 24" style="width:13px;height:13px"><path d="M7 17 L17 7 M9 7 H17 V15" style="fill:none;stroke:#FFFFFF;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"></path></svg></span>
+</div>
+<span style="margin-top:26px;font-size:28px;line-height:32px;font-weight:780;font-stretch:115%;letter-spacing:-0.3px;color:var(--ink)">Product thinking</span>
+<span style="font-size:18px;font-weight:680;line-height:1.3;color:var(--ink)">Emotion canvas app</span>
+<span style="font-size:14px;color:var(--quiet)">Built with a team of five</span>
+<span class="o-facts">
+<span class="o-facts-row" style="gap:6px 12px"><b class="o-hl o-f-skill">Product</b><b class="o-hl o-f-skill">Development</b><b class="o-hl o-f-skill">UX</b><b class="o-hl o-f-skill">Business</b></span>
+</span>
+</a>
+</div>
+</section>
+  <div class="wrap">
+
+
+    <section aria-labelledby="work-title" style="padding-top:56px">
+      <h2 class="section-title" id="work-title">Selected work</h2>
+      <article class="feature">
+        <div>
+          <p class="meta">AI Product Manager Intern, Novartis</p>
+          <h3>Reps had a year of notes and no time to read them</h3>
+          <p class="desc">How I took a one-line leadership ask for an AI summary and turned it into a grounded, compliance-safe MVP that engineering committed to build.</p>
+          <div class="tags"><span class="tag">AI product</span><span class="tag">Discovery</span><span class="tag">Pharma</span></div>
+          <a class="btn" href="#/work/novartis">Read the case study</a>
+        </div>
+        <div class="stats">
+          <div>
+            <div class="stat-row">
+              <span class="stat-num">$30M</span>
+              <span class="ann"><svg viewBox="0 0 56 26" aria-hidden="true"><path d="M52 15 C 38 21, 22 20, 6 9 M6 9 L 14 6 M6 9 L 10 17" fill="none" stroke="var(--pen)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="hand">approved + Q4 build!</span></span>
+            </div>
+            <div class="stat-label">estimated benefit</div>
+          </div>
+          <div>
+            <div class="stat-num">~30%</div>
+            <div class="stat-label">less call-prep time for field reps</div>
+          </div>
+        </div>
+      </article>
+      <a class="mini" href="#/work/bridge">
+        <span class="mini-meta">AI Product Manager Intern, Novartis. Short read.</span>
+        <h3>Microsoft shipped our product a week after I joined</h3>
+        <p>So I drafted the bridge strategy: what to build for the year before the company could switch.</p>
+        <span class="mini-go">Read the short version</span>
+      </a>
+      <article class="feature" style="margin-top:24px">
+        <div>
+          <p class="meta">Product Manager Intern, Instructure</p>
+          <h3>Found a Canvas growth opportunity in a declining market</h3>
+          <p class="desc">Turned a shrinking core market into a growth opportunity: segmented users, ran 7 stakeholder interviews, prioritized ~10 ideas to 3, and presented to leadership.</p>
+          <div class="tags"><span class="tag">Growth strategy</span><span class="tag">User research</span><span class="tag">Prioritization</span></div>
+          <a class="btn" href="#/work/instructure">Read the case study</a>
+        </div>
+        <div class="stats">
+          <div>
+            <div class="stat-row">
+              <span class="stat-num">2 of 3</span>
+              <span class="ann"><svg viewBox="0 0 56 26" aria-hidden="true"><path d="M52 15 C 38 21, 22 20, 6 9 M6 9 L 14 6 M6 9 L 10 17" fill="none" stroke="var(--pen)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="hand">on the roadmap list!</span></span>
+            </div>
+            <div class="stat-label">of my solutions adopted for roadmap consideration</div>
+          </div>
+          <div><div class="stat-num">7</div><div class="stat-label">interviews across 4 stakeholder groups</div></div>
+        </div>
+      </article>
+      <article class="feature" style="margin-top:24px">
+        <div>
+          <p class="meta">Data Analyst Intern, Michigan Medicine</p>
+          <h3>Did a CDC testing policy work? I built the data to answer it</h3>
+          <p class="desc">Defined 3 success metrics, built an analysis-ready cohort from 10 years of Medicaid claims in R, and turned the results into a Tableau dashboard for decision-makers.</p>
+          <div class="tags"><span class="tag">Impact evaluation</span><span class="tag">R + Tableau</span><span class="tag">Healthcare</span></div>
+          <a class="btn" href="#/work/hepc">Read the case study</a>
+        </div>
+        <div class="stats">
+          <div><div class="stat-num">10 yrs</div><div class="stat-label">of multi-state Medicaid claims, cleaned and analyzed in R</div></div>
+          <div><div class="stat-num">3</div><div class="stat-label">success metrics: impact, timing, equity</div></div>
+        </div>
+      </article>
+    </section>
+  </div>
+</div>
+
+<!-- WORK -->
+<div class="page" data-page="work" hidden>
+  <div class="wrap">
+    <header class="page-head">
+      <h1>Work</h1>
+      <p>Product discovery and definition, from strategy to a plan a team can build.</p>
+    </header>
+    <div class="work-list">
+      <article class="feature">
+        <div>
+          <p class="meta">AI Product Manager Intern, Novartis</p>
+          <h3>Reps had a year of notes and no time to read them</h3>
+          <p class="desc">An AI summary that turns scattered call notes into one grounded view of each healthcare organization.</p>
+          <div class="tags"><span class="tag">AI product</span><span class="tag">Discovery</span><span class="tag">Pharma</span></div>
+          <a class="btn" href="#/work/novartis">Read the case study</a>
+        </div>
+        <div class="stats">
+          <div><div class="stat-num">$30M</div><div class="stat-label">estimated benefit</div></div>
+          <div><div class="stat-num">~30%</div><div class="stat-label">less call-prep time for field reps</div></div>
+        </div>
+      </article>
+      <a class="mini" href="#/work/bridge">
+        <span class="mini-meta">AI Product Manager Intern, Novartis. Short read.</span>
+        <h3>Microsoft shipped our product a week after I joined</h3>
+        <p>So I drafted the bridge strategy: what to build for the year before the company could switch.</p>
+        <span class="mini-go">Read the short version</span>
+      </a>
+      <article class="feature">
+        <div>
+          <p class="meta">Product Manager Intern, Instructure</p>
+          <h3>Found a Canvas growth opportunity in a declining market</h3>
+          <p class="desc">Turned a shrinking core market into a growth opportunity: segmented users, ran 7 stakeholder interviews, prioritized ~10 ideas to 3, and presented to leadership.</p>
+          <div class="tags"><span class="tag">Growth strategy</span><span class="tag">User research</span><span class="tag">Prioritization</span></div>
+          <a class="btn" href="#/work/instructure">Read the case study</a>
+        </div>
+        <div class="stats">
+          <div><div class="stat-num">2 of 3</div><div class="stat-label">of my solutions adopted for roadmap consideration</div></div>
+          <div><div class="stat-num">7</div><div class="stat-label">interviews across 4 stakeholder groups</div></div>
+        </div>
+      </article>
+      <article class="feature">
+        <div>
+          <p class="meta">Data Analyst Intern, Michigan Medicine</p>
+          <h3>Did a CDC testing policy work? I built the data to answer it</h3>
+          <p class="desc">Defined 3 success metrics, built an analysis-ready cohort from 10 years of Medicaid claims in R, and turned the results into a Tableau dashboard for decision-makers.</p>
+          <div class="tags"><span class="tag">Impact evaluation</span><span class="tag">R + Tableau</span><span class="tag">Healthcare</span></div>
+          <a class="btn" href="#/work/hepc">Read the case study</a>
+        </div>
+        <div class="stats">
+          <div><div class="stat-num">10 yrs</div><div class="stat-label">of multi-state Medicaid claims, cleaned and analyzed in R</div></div>
+          <div><div class="stat-num">3</div><div class="stat-label">success metrics: impact, timing, equity</div></div>
+        </div>
+      </article>
+      <div class="placeholder" style="margin-top:0"><div><h3>More case studies</h3><p>In progress.</p></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="page" data-page="about" hidden>
+  <div class="wrap">
+    <header class="page-head">
+      <h1>About</h1>
+    </header>
+    <div class="about">
+      <div class="photo" role="img" aria-label="Photo placeholder">Your photo here</div>
+      <div>
+        <h2>Hi, I'm Xandra</h2>
+        <p>I'm quiet when I first walk into a room. Give me a messy problem and a room full of opinions, and that changes fast: I listen until I understand what people actually need, then I make the call and write the plan.</p>
+        <p>My background sits between engineering and people. I trained as an electrical and computer engineer, then moved into UX research and design, and I bring both to product work: I can follow a data flow and I can run the interview that tells you whether to build it.</p>
+        <h2>Education</h2>
+        <ul class="edu">
+          <li><strong>University of Michigan, Ann Arbor</strong><span>MS in Information Science, UX Research and Design, 2025 to 2027</span></li>
+          <li><strong>Shanghai Jiao Tong University</strong><span>BEng in Electrical and Computer Engineering, 2022 to 2026 (joint program)</span></li>
+        </ul>
+        <h2>Outside work</h2>
+        <p class="fine">Add a few lines about what you enjoy outside product work.</p>
+        <h2>Get in touch</h2>
+        <div class="foot-links"><a href="mailto:hanbai@umich.edu">Email</a><a href="https://www.linkedin.com/in/xandra-han-bai" target="_blank" rel="noopener">LinkedIn</a><a href="#/resume">Resume</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RESUME -->
+<div class="page" data-page="resume" hidden>
+  <div class="wrap">
+    <header class="page-head">
+      <h1>Resume</h1>
+      <p>A short version is below. The full PDF is available to download.</p>
+      <p style="margin-top:20px"><a class="btn" href="#" data-placeholder>Download PDF</a></p>
+    </header>
+    <div class="resume">
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="job-top"><strong>AI Product Manager Intern, Novartis</strong><span>Summer internship, 10 weeks</span></div>
+        <div class="fine">AI and Innovation Product Team</div>
+        <ul>
+          <li>Owned an AI summary feature for field reps' free-text call notes in Veeva CRM, from discovery through MVP definition and roadmap.</li>
+          <li>Interviewed field reps and aligned leadership, engineering, UX, and AI compliance across four design iterations.</li>
+          <li>Plan approved by leadership and committed for a Q4 build; estimated $30M benefit and about 30% less call-prep time.</li>
+          <li>Drafted a bridge strategy and roadmap for an agentic AI product after Microsoft announced a competing tool; approved by my manager.</li>
+        </ul>
+      </div>
+      <h2>Education</h2>
+      <div class="job">
+        <div class="job-top"><strong>University of Michigan, Ann Arbor</strong><span>2025 to 2027</span></div>
+        <div class="fine">MS in Information Science, UX Research and Design</div>
+      </div>
+      <div class="job" style="margin-top:18px">
+        <div class="job-top"><strong>Shanghai Jiao Tong University</strong><span>2022 to 2026</span></div>
+        <div class="fine">BEng in Electrical and Computer Engineering</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- INSTRUCTURE CASE STUDY -->
+<div class="page" data-page="instructure" hidden>
+  <div class="cs">
+    <aside class="rail" aria-label="Case study sections">
+      <a class="back" href="#/work">Back to work</a>
+      <a href="#" data-sec="i-overview">Overview</a>
+      <a href="#" data-sec="i-skills">Core PM skills</a>
+      <a href="#" data-sec="i-opp">Opportunity</a>
+      <a href="#" data-sec="i-seg">Segmentation</a>
+      <a href="#" data-sec="i-research">User research</a>
+      <a href="#" data-sec="i-insight">Synthesis</a>
+      <a href="#" data-sec="i-prio">Prioritization</a>
+      <a href="#" data-sec="i-recs">Recommendations</a>
+      <a href="#" data-sec="i-lead">Presenting</a>
+      <a href="#" data-sec="i-impact">Impact</a>
+    </aside>
+
+    <div class="cs-main">
+      <details class="sections-mobile">
+        <summary>Sections</summary>
+        <nav aria-label="Case study sections">
+          <a href="#" data-sec="i-overview">Overview</a>
+          <a href="#" data-sec="i-skills">Core PM skills</a>
+          <a href="#" data-sec="i-opp">Opportunity</a>
+          <a href="#" data-sec="i-seg">Segmentation</a>
+          <a href="#" data-sec="i-research">User research</a>
+          <a href="#" data-sec="i-insight">Synthesis</a>
+          <a href="#" data-sec="i-prio">Prioritization</a>
+          <a href="#" data-sec="i-recs">Recommendations</a>
+          <a href="#" data-sec="i-lead">Presenting</a>
+          <a href="#" data-sec="i-impact">Impact</a>
+        </nav>
+      </details>
+
+      <!-- OVERVIEW -->
+      <section id="i-overview" class="cs-hero">
+        <p class="kicker">Product strategy · Growth</p>
+        <h1>Found a Canvas growth opportunity in a declining market. Leadership adopted 2 of my 3 solutions for the roadmap</h1>
+        <p class="cs-meta">Product Manager Intern, Instructure · Fall 2025</p>
+        <p class="cs-role">Owned the product work, from opportunity to recommendations. Also ran project management and presented to leadership.</p>
+        <dl class="brief">
+          <div><dt>Background &amp; problem</dt><dd>Four-year college enrollment is falling. That is Canvas's core market, and it called for a change in where Canvas grows.</dd></div>
+          <div><dt>What I did</dt><dd>Treated the decline as a product opportunity. I traced where the students behind the shrinking market are going, chose <span class="hl">community college students</span> as the target segment, and researched them.</dd></div>
+          <div class="res"><dt>Result</dt><dd>Based on my user research, segment analysis, prioritization and knowledge of today's Canvas, I recommended 3 strategic solutions and presented them to Instructure leadership. <strong>Leadership adopted 2 of the 3 for future roadmap consideration.</strong></dd></div>
+        </dl>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="i-skills">
+        <h2>Core PM skills, with evidence</h2>
+        <div class="skills4 skills6">
+          <a href="#" data-sec="i-opp"><b>Opportunity identification</b><span>Turned a market decline into a growth opportunity.</span><em>See how ↓</em></a>
+          <a href="#" data-sec="i-seg"><b>User segmentation</b><span>Scored 4 segments and picked 1 target user.</span><em>See how ↓</em></a>
+          <a href="#" data-sec="i-research"><b>User research</b><span>7 interviews across 4 stakeholder groups.</span><em>See how ↓</em></a>
+          <a href="#" data-sec="i-insight"><b>Insight synthesis</b><span>3 insights backed by interviews and secondary research.</span><em>See how ↓</em></a>
+          <a href="#" data-sec="i-prio"><b>Prioritization</b><span>Scored ~10 ideas on 5 criteria and picked 3.</span><em>See how ↓</em></a>
+          <a href="#" data-sec="i-lead"><b>Executive communication</b><span>Presented the strategy to Instructure leadership.</span><em>See how ↓</em></a>
+        </div>
+      </section>
+
+      <!-- OPPORTUNITY -->
+      <section id="i-opp">
+<div class="noted shead"><div><p class="kicker">01 · Opportunity</p><h2>I saw the opportunity hiding inside the decline</h2></div><div class="sk"><p>Skills shown</p><ul class="skill-chips"><li>Market research</li><li>Growth opportunity identification</li><li>Product strategy</li></ul></div></div>
+        <div class="opp">
+          <figure class="opp-chart">
+            <svg viewBox="0 0 640 260" role="img" aria-label="Illustrative trend: four-year enrollment declines, the current problem, while alternative pathways grow at the same time, the coexisting opportunity">
+              <line class="ax" x1="40" y1="210" x2="520" y2="210"/>
+              <line class="ax" x1="40" y1="24" x2="40" y2="210"/>
+              <line class="now" x1="520" y1="24" x2="520" y2="210"/>
+              <path class="l1" d="M40 60 C 200 68, 360 122, 520 164"/>
+              <path class="l2" d="M40 196 C 200 190, 360 132, 520 70"/>
+              <path class="shift" d="M440 144 L440 112"/>
+              <path class="shift" d="M434 119 L440 111 L446 119"/>
+              <text class="sh" x="440" y="172" text-anchor="middle">students shift</text>
+              <circle class="d1" cx="520" cy="164" r="6"/>
+              <circle class="d2" cx="520" cy="70" r="6"/>
+              <text class="tag1" x="532" y="160">Problem</text>
+              <text class="sub1" x="532" y="178">4-year enrollment ↓</text>
+              <text class="tag2" x="532" y="66">Opportunity</text>
+              <text class="sub2" x="532" y="84">alternative paths ↑</text>
+              <text class="tk2" x="40" y="234">Then</text>
+              <text class="tk2 b" x="520" y="234" text-anchor="middle">Now: both at once</text>
+            </svg>
+            <figcaption class="fine">Direction from desk research, not to scale. Drivers: rising costs, a shifting job market, AI changing which skills employers want.</figcaption>
+          </figure>
+          <div class="opp-side">
+            <div class="opp-card risk"><small>The current problem</small><b>Canvas's core market of four-year institutions is shrinking</b></div>
+            <div class="opp-card gain"><small>The coexisting opportunity</small><b>The students aren't disappearing. They're moving to alternative paths.</b></div>
+            <div class="opp-card mine"><small>My call</small><b>Follow the students: grow Canvas where the decline is going</b></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENTATION -->
+      <section id="i-seg">
+<div class="noted shead"><div><p class="kicker">02 · Segmentation</p><h2>I scored 4 potential segments and narrowed to 1 target user</h2></div><div class="sk"><p>Skills shown</p><ul class="skill-chips"><li>User segmentation</li><li>Market research</li></ul></div></div>
+        <div class="funnel" aria-label="Scoping funnel">
+          <div class="fn"><b>All learners leaving high school</b><span>Our first framing. Too broad to research or design for.</span></div>
+          <div class="fn"><b>Learners on alternative pathways</b><span>Community college, vocational, bootcamps and online courses, direct to work</span></div>
+          <div class="fn on"><b>Target: community college students</b><span>Highest on all three criteria below</span></div>
+        </div>
+        <div class="noted">
+          <div class="sc-wrap">
+            <div class="score" role="table" aria-label="How each segment scored">
+              <div class="score-row score-head" role="row"><span role="columnheader">Segment</span><span role="columnheader">Hit by the trend</span><span role="columnheader">Reachable via Canvas</span><span role="columnheader">Researchable now</span><span role="columnheader"></span></div>
+              <div class="score-row" role="row"><span role="cell"><b>Community college students</b></span><span role="cell" class="dots" aria-label="High"><i></i><i></i><i></i></span><span role="cell" class="dots" aria-label="High"><i></i><i></i><i></i></span><span role="cell" class="dots" aria-label="High"><i></i><i></i><i></i></span><span role="cell"><b class="pill pick">Target</b></span></div>
+              <div class="score-row" role="row"><span role="cell">Vocational and trade learners</span><span role="cell" class="dots" aria-label="High"><i></i><i></i><i></i></span><span role="cell" class="dots" aria-label="Medium"><i></i><i></i><i class="o"></i></span><span role="cell" class="dots" aria-label="Low"><i></i><i class="o"></i><i class="o"></i></span><span role="cell"><b class="pill">Later</b></span></div>
+              <div class="score-row" role="row"><span role="cell">Bootcamp and online-course learners</span><span role="cell" class="dots" aria-label="Medium"><i></i><i></i><i class="o"></i></span><span role="cell" class="dots" aria-label="Low"><i></i><i class="o"></i><i class="o"></i></span><span role="cell" class="dots" aria-label="Medium"><i></i><i></i><i class="o"></i></span><span role="cell"><b class="pill">Later</b></span></div>
+              <div class="score-row" role="row"><span role="cell">Straight into the workforce</span><span role="cell" class="dots" aria-label="High"><i></i><i></i><i></i></span><span role="cell" class="dots" aria-label="Low"><i></i><i class="o"></i><i class="o"></i></span><span role="cell" class="dots" aria-label="Low"><i></i><i class="o"></i><i class="o"></i></span><span role="cell"><b class="pill">Out</b></span></div>
+            </div>
+          </div>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 84 44" style="transform:rotate(3deg)" aria-hidden="true"><path d="M78 10 C 66 4, 54 10, 58 20 C 61 28, 72 24, 68 16 C 63 8, 44 14, 30 24 C 22 30, 14 32, 7 31" stroke-width="2.3"/><path d="M7 31 C 11 28, 14 25, 16 22 M7 31 C 11 33, 15 35, 18 38" stroke-width="2.3"/></svg>
+            <span class="hand">narrow focus = a growth bet I can test</span>
+          </div>
+        </div>
+        <p class="fine row">Reachable via Canvas: learners inside institutions Canvas already serves. Researchable now: participants I could recruit within one semester.</p>
+      </section>
+
+      <!-- RESEARCH -->
+      <section id="i-research">
+<div class="noted shead"><div><p class="kicker">03 · User research</p><h2>7 stakeholder interviews across 4 groups</h2></div><div class="sk"><p>Skills shown</p><ul class="skill-chips"><li>UX research</li><li>Stakeholder interviews</li></ul></div></div>
+        <div class="smap">
+          <figure class="smap-chart">
+            <svg viewBox="0 0 560 360" role="img" aria-label="Stakeholder map of nine groups by interest and influence. Interviewed: students, Instructure, employers and alternative-education institutions.">
+              <rect class="frame" x="70" y="20" width="470" height="290" rx="6"/>
+              <line class="mid" x1="305" y1="20" x2="305" y2="310"/>
+              <line class="mid" x1="70" y1="165" x2="540" y2="165"/>
+              <circle class="pt on" cx="484" cy="55" r="7"/><text x="470" y="60" text-anchor="end" class="on">Students</text>
+              <circle class="pt" cx="408" cy="80" r="6"/><text x="396" y="85" text-anchor="end">Educators</text>
+              <circle class="pt" cx="267" cy="61" r="6"/><text x="255" y="82" text-anchor="end">Higher-ed institutions</text>
+              <circle class="pt" cx="126" cy="49" r="6"/><text x="138" y="54">Policy makers</text>
+              <circle class="pt on" cx="474" cy="159" r="7"/><text x="460" y="150" text-anchor="end" class="on">Instructure</text>
+              <circle class="pt" cx="446" cy="206" r="6"/><text x="434" y="211" text-anchor="end">EdTech competitors</text>
+              <circle class="pt on" cx="286" cy="159" r="7"/><text x="286" y="186" text-anchor="middle" class="on">Alt-ed institutions</text>
+              <circle class="pt on" cx="200" cy="200" r="7"/><text x="188" y="205" text-anchor="end" class="on">Employers</text>
+              <circle class="pt" cx="352" cy="269" r="6"/><text x="364" y="274">Parents</text>
+              <text class="axl" x="305" y="342" text-anchor="middle">Interest in the project →</text>
+              <text class="axl" x="40" y="165" text-anchor="middle" transform="rotate(-90 40 165)">Influence →</text>
+            </svg>
+            <figcaption class="fine"><span class="lg on"></span> interviewed <span class="lg"></span> mapped, not interviewed</figcaption>
+          </figure>
+          <div class="ibars">
+            <p class="ib-t">Interviews by group</p>
+            <div class="ib"><span>Community college students</span><i style="width:100%"></i><b>4</b></div>
+            <div class="ib"><span>Instructure executive</span><i style="width:25%"></i><b>1</b></div>
+            <div class="ib"><span>Recruiter (employer)</span><i style="width:25%"></i><b>1</b></div>
+            <div class="ib"><span>Campus entrepreneurship center</span><i style="width:25%"></i><b>1</b></div>
+            <p class="ib-t" style="margin-top:18px">Methods</p>
+            <ul class="skill-chips"><li>Stakeholder mapping</li><li>Secondary research</li><li>Semi-structured interviews</li><li>Service usability evaluation</li><li>Affinity mapping</li></ul>
+          </div>
+        </div>
+        <div class="noted" style="margin-top:14px">
+          <div><p>I mapped 9 stakeholder groups by influence and interest, then interviewed the four closest to the problem. When early answers broke my assumptions, I moved to semi-structured interviews to dig deeper.</p></div>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 80 40" style="transform:rotate(-2deg)" aria-hidden="true"><path d="M76 22 C 70 14, 64 30, 57 21 C 51 13, 45 29, 38 20 C 32 13, 26 25, 18 21 L 7 19" stroke-width="2.5"/><path d="M7 19 L 15 12 M7 19 C 10 22, 13 25, 16 28" stroke-width="2.5"/></svg>
+            <span class="hand">adapted the protocol mid-study</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SYNTHESIS -->
+      <section id="i-insight">
+<div class="noted shead"><div><p class="kicker">04 · Synthesis</p><h2>3 insights, backed by interviews and secondary research</h2></div><div class="sk"><p>Skills shown</p><ul class="skill-chips"><li>UX research</li><li>Insight synthesis</li></ul></div></div>
+        <div class="flowv" aria-label="Interview notes and secondary research go into an affinity wall, which produces three insights">
+          <div class="srcs">
+            <span class="chip2 t1"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg></span>7 interview transcripts</span>
+            <span class="chip2 t2"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H4zM20 5h-6a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h6z"/></svg></span>10+ secondary sources</span>
+            <span class="chip2 t3"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="2"/><path d="m8 12 3 3 5-6"/></svg></span>Service evaluation</span>
+          </div>
+          <span class="flowarrow" aria-hidden="true"></span>
+          <div class="agent"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><b>Affinity wall</b><span>clustered into themes</span></div>
+          <span class="flowarrow" aria-hidden="true"></span>
+          <div class="outs">
+            <span class="chip2 out"><span class="num">1</span>Perception vs. use</span>
+            <span class="chip2 out"><span class="num">2</span>Resources out of reach</span>
+            <span class="chip2 out"><span class="num">3</span>Plans keep changing</span>
+          </div>
+        </div>
+        <div class="insights">
+          <div class="ins mine">
+            <span class="n">01</span><b>Students value career services but don't use them</b>
+            <div class="ev2"><small>Interviews</small><p>All 4 students called the career office useful. Almost none had used it.</p></div>
+            <div class="ev2"><small>Secondary research</small><p>Students rely on parents and counselors as their most trusted career guides (NHES).</p></div>
+            <p class="so">So: support must reach students, not wait for them</p>
+          </div>
+          <div class="ins">
+            <span class="n">02</span><b>Community colleges can't offer enough accessible resources</b>
+            <div class="ev2"><small>Interviews &amp; service evaluation</small><p>Career support on campus was limited and hard for students to reach.</p></div>
+            <div class="ev2"><small>Secondary research</small><p>Rising costs and shrinking state support squeeze institutions' budgets.</p></div>
+            <p class="so">So: pool resources across schools</p>
+          </div>
+          <div class="ins">
+            <span class="n">03</span><b>Students keep changing career plans while in school</b>
+            <div class="ev2"><small>Interviews</small><p>One student switched from film to psychology in year one. Another was moving into astrophysics.</p></div>
+            <div class="ev2"><small>Secondary research</small><p>New graduates change roles several times in a few years. The fixed career plan is outdated (Fischer, 2022).</p></div>
+            <p class="so">So: show how coursework connects to many paths</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRIORITIZATION -->
+      <section id="i-prio">
+<div class="noted shead"><div><p class="kicker">05 · Prioritization</p><h2>I prioritized ~10 ideas down to 3 recommendations</h2></div><div class="sk"><p>Skills shown</p><ul class="skill-chips"><li>Prioritization</li><li>Product strategy</li></ul></div></div>
+        <div class="join" style="margin:18px 0 22px" aria-label="Solution funnel">
+          <span class="chipbox">~10 ideas<small>brainstormed from the insights</small></span>
+          <span class="op">→</span>
+          <span class="chipbox">Scored on 5 criteria<small>need, impact, feasibility, fit, reliance</small></span>
+          <span class="op">→</span>
+          <span class="chipbox">3 recommended<small>to Instructure leadership</small></span>
+          <span class="op">→</span>
+          <span class="chipbox on">2 adopted<small>for roadmap consideration</small></span>
+        </div>
+        <div class="noted">
+          <div class="sc-wrap">
+            <div class="score pscore" role="table" aria-label="Solution scores on five criteria">
+              <div class="score-row score-head" role="row"><span role="columnheader">Solution</span><span role="columnheader">User need</span><span role="columnheader">Business impact</span><span role="columnheader">Feasibility</span><span role="columnheader">Fits current Canvas</span><span role="columnheader">Low outside reliance</span><span role="columnheader"></span></div>
+              <div class="score-row" role="row"><span role="cell"><b>Pre-scheduled check-ins</b></span><span role="cell" class="dots" aria-label="High"><i></i><i></i><i></i></span><span role="cell" class="dots" aria-label="Medium to high"><i></i><i></i><i class="h"></i></span><span role="cell" class="dots" aria-label="High"><i></i><i></i><i></i></span><span role="cell" class="dots" aria-label="High"><i></i><i></i><i></i></span><span role="cell" class="dots" aria-label="Medium"><i></i><i></i><i class="o"></i></span><span role="cell"><b class="pill pick">Quick win</b></span></div>
+              <div class="score-row" role="row"><span role="cell"><b>Career Service Web</b></span><span role="cell" class="dots" aria-label="High"><i></i><i></i><i></i></span><span role="cell" class="dots" aria-label="High"><i></i><i></i><i></i></span><span role="cell" class="dots" aria-label="Medium"><i></i><i></i><i class="o"></i></span><span role="cell" class="dots" aria-label="Medium"><i></i><i></i><i class="o"></i></span><span role="cell" class="dots" aria-label="Low"><i></i><i class="o"></i><i class="o"></i></span><span role="cell"><b class="pill pick">Big bet</b></span></div>
+              <div class="score-row" role="row"><span role="cell">Pathway Guide</span><span role="cell" class="dots" aria-label="Medium to high"><i></i><i></i><i class="h"></i></span><span role="cell" class="dots" aria-label="Medium"><i></i><i></i><i class="o"></i></span><span role="cell" class="dots" aria-label="Medium"><i></i><i></i><i class="o"></i></span><span role="cell" class="dots" aria-label="Medium to high"><i></i><i></i><i class="h"></i></span><span role="cell" class="dots" aria-label="Low"><i></i><i class="o"></i><i class="o"></i></span><span role="cell"><b class="pill">Later</b></span></div>
+            </div>
+          </div>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 80 40" style="transform:rotate(-6deg)" aria-hidden="true"><path d="M74 28 C 56 30, 34 24, 10 16" stroke-width="2.8"/><path d="M10 16 L 19 10 M10 16 L 17 25 M12 17 L 20 22" stroke-width="2.1"/></svg>
+            <span class="hand">one quick win + one big bet</span>
+          </div>
+        </div>
+        <div class="why2">
+          <div class="w dst"><span class="kind">Quick win</span><p><b>Check-ins</b> build on the existing Canvas calendar and analytics. Low build cost, fast to ship.</p></div>
+          <div class="w dst"><span class="kind">Big bet</span><p><b>Career Service Web</b> grows Canvas across institutions. Higher effort, biggest growth upside.</p></div>
+        </div>
+        <p class="fine row">The 3 recommended solutions shown. More dots = better on that criterion.</p>
+      </section>
+
+      <!-- RECOMMENDATIONS -->
+      <section id="i-recs">
+<div class="noted shead"><div><p class="kicker">06 · Recommendations</p><h2>3 Canvas solutions, each solving one insight</h2></div><div class="sk"><p>Skills shown</p><ul class="skill-chips"><li>Product strategy</li><li>Product roadmap</li></ul></div></div>
+        <div class="recs">
+          <div class="rec adopted"><span class="pill">Adopted</span><b>Pre-scheduled check-ins</b>
+            <p class="kv"><span class="k">Solves</span>Insight 01: help that waits for students</p>
+            <p class="kv"><span class="k">How</span>Canvas Calendar books advisor check-ins at key points each semester</p>
+            <p class="kv"><span class="k">Value</span>Turns an existing feature into a proactive student-success tool</p>
+          </div>
+          <div class="rec adopted"><span class="pill">Adopted</span><b>Career Service Web</b>
+            <p class="kv"><span class="k">Solves</span>Insight 02: too few resources per campus</p>
+            <p class="kv"><span class="k">How</span>Pairs community colleges with each other and larger schools to share resources off-peak</p>
+            <p class="kv"><span class="k">Value</span>Connects institutions across Canvas's network, beyond one campus</p>
+          </div>
+          <div class="rec"><span class="pill">Recommended</span><b>Pathway Guide</b>
+            <p class="kv"><span class="k">Solves</span>Insight 03: shifting career plans</p>
+            <p class="kv"><span class="k">How</span>A Learner's Hub dashboard linking coursework to career paths</p>
+            <p class="kv"><span class="k">Value</span>Positions Learner's Hub for career readiness</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEADERSHIP -->
+      <section id="i-lead">
+<div class="noted shead"><div><p class="kicker">07 · Beyond the product work</p><h2>I also ran the project and presented to leadership</h2></div><div class="sk"><p>Skills shown</p><ul class="skill-chips"><li>Executive presentation</li><li>Project management</li></ul></div></div>
+        <div class="shows2">
+          <div><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M12 16v4M8 20h8M7 12l3-3 2 2 4-4"/></svg></span><b>Presented the full deck</b><span>Problem, research, insights and recommendations, plus Q&amp;A with leadership.</span></div>
+          <div><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M8 14h3"/></svg></span><b>Project management</b><span>Built the project timeline and coordinated all 6 milestones.</span></div>
+          <div><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 19c.8-3 2.8-4.5 5-4.5s4.2 1.5 5 4.5M11 19c.8-3 2.8-4.5 5-4.5s4.2 1.5 5 4.5"/></svg></span><b>Partner management</b><span>Led the partner check-in and the presentation draft.</span></div>
+        </div>
+      </section>
+
+      <!-- IMPACT -->
+      <section id="i-impact">
+        <p class="kicker">08 · Impact</p>
+        <h2>Impact</h2>
+        <div class="outcome"><b>2 of my 3 solutions</b><span>adopted by Instructure leadership for future Canvas roadmap consideration: pre-scheduled check-ins and the Career Service Web</span></div>
+        <div class="shows2" style="margin-top:8px">
+          <div><b>What it enabled</b><span>Growth options for students outside Canvas's traditional university market.</span></div>
+          <div><b>What I learned</b><span>A narrow target user made the research sharper and the recommendations easier to act on.</span></div>
+          <div><b>What I'd do differently</b><span>Interview parents and educators. Both shape career choices, and I flagged them as missing perspectives.</span></div>
+        </div>
+        <div class="row">
+          <p style="margin-top:32px"><a class="btn btn-ghost" href="#/work">Back to work</a></p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- HEP C CASE STUDY -->
+<div class="page" data-page="hepc" hidden>
+  <div class="cs">
+    <aside class="rail" aria-label="Case study sections">
+      <a class="back" href="#/work">Back to work</a>
+      <a href="#" data-sec="h-overview">Overview</a>
+      <a href="#" data-sec="h-skills">Core skills</a>
+      <a href="#" data-sec="h-context">Problem framing</a>
+      <a href="#" data-sec="h-metrics">Metric definition</a>
+      <a href="#" data-sec="h-data">Data engineering</a>
+      <a href="#" data-sec="h-quality">Data quality</a>
+      <a href="#" data-sec="h-dash">Stakeholder communication</a>
+      <a href="#" data-sec="h-impact">Impact</a>
+    </aside>
+
+    <div class="cs-main">
+      <details class="sections-mobile">
+        <summary>Sections</summary>
+        <nav aria-label="Case study sections">
+          <a href="#" data-sec="h-overview">Overview</a>
+          <a href="#" data-sec="h-skills">Core skills</a>
+          <a href="#" data-sec="h-context">Problem framing</a>
+          <a href="#" data-sec="h-metrics">Metric definition</a>
+          <a href="#" data-sec="h-data">Data engineering</a>
+          <a href="#" data-sec="h-quality">Data quality</a>
+          <a href="#" data-sec="h-dash">Stakeholder communication</a>
+          <a href="#" data-sec="h-impact">Impact</a>
+        </nav>
+      </details>
+
+      <section id="h-overview" class="cs-hero">
+        <p class="kicker">Impact evaluation · Data analysis · Metrics · Stakeholder communication</p>
+        <h1>Turning a CDC policy question into metrics, a 10-year cohort data analysis and Tableau dashboard</h1>
+        <p class="cs-meta">Data Analyst Intern, Michigan Medicine</p>
+        <p class="cs-role">Apr 2026 – Aug 2026 · Owned end to end</p>
+        <ul class="skill-chips" aria-label="Skills used">
+          <li>Data cleaning</li><li>Cohort building</li><li>Metric definition</li><li>Impact evaluation</li><li>Data visualization</li><li>R (data.table)</li><li>Tableau</li>
+        </ul>
+
+        <div class="viz-show viz-live">
+          <div class="vs-top">
+            <div>
+              <span class="vs-kicker">Interactive Tableau dashboard</span>
+              <span class="vs-title">Is the policy working? Answers at a glance for decision-makers</span>
+            </div>
+            <span class="vs-badge">SYNTHETIC DATA</span>
+          </div>
+          <div class="viz-frame">
+            <iframe src="https://public.tableau.com/views/IHPI-impact/Impact?:embed=y&amp;:showVizHome=no&amp;:display_count=no&amp;:toolbar=bottom&amp;:tabs=yes" title="Hep C screening dashboard on Tableau Public (synthetic data)" loading="lazy" allowfullscreen></iframe>
+          </div>
+        </div>
+        <p class="fine">The study is unpublished, so the dashboard runs on synthetic data: same method and definitions, invented numbers.</p>
+
+        <article class="call" style="margin-top:28px">
+          <div class="beats">
+            <div><span class="beat">Problem</span><p>In November 2023, the CDC changed how infants exposed to hepatitis C should be tested. Did practice actually change?</p></div>
+            <div><span class="beat">What I did</span><p>Defined how to measure it, built an infant cohort from 10 years of Medicaid claims in R, and set the data-quality rules for what could be reported.</p></div>
+            <div><span class="beat">What it led to</span><p>An analysis-ready cohort, reusable code and baseline insights for the policy evaluation.</p></div>
+          </div>
+        </article>
+
+        <dl class="facts">
+          <div><dt>Role</dt><dd>Data Analyst Intern</dd></div>
+          <div><dt>Organization</dt><dd>Michigan Medicine</dd></div>
+          <div><dt>Timeline</dt><dd>Apr 2026 – Aug 2026</dd></div>
+          <div><dt>Tools</dt><dd>R and data.table (internship); Tableau (portfolio rebuild)</dd></div>
+          <div><dt>Data</dt><dd>Multi-state Medicaid claims, 2015–2024: millions of records, 800K+ infants</dd></div>
+        </dl>
+      </section>
+
+      <section id="h-skills">
+        <h2>Core skills, with evidence</h2>
+        <div class="skills4">
+          <a href="#" data-sec="h-metrics"><b>Metric definition</b><span>Defined 3 success metrics (impact, timing, equity) for a vague policy question.</span><em>See how ↓</em></a>
+          <a href="#" data-sec="h-data"><b>Data engineering in R</b><span>Built an analysis-ready cohort from 10 years of claims, and caught a bug that would have skewed every rate.</span><em>See how ↓</em></a>
+          <a href="#" data-sec="h-quality"><b>Data quality &amp; decision-making</b><span>Set reporting rules so incomplete data couldn't mislead decisions.</span><em>See how ↓</em></a>
+          <a href="#" data-sec="h-dash"><b>Stakeholder communication</b><span>Turned the analysis into a Tableau dashboard that answers decision-makers' questions.</span><em>See how ↓</em></a>
+        </div>
+      </section>
+
+      <section id="h-context">
+        <p class="kicker">Context · Problem framing</p>
+        <h2>A national policy launched, with no way yet to tell if it worked</h2>
+        <div class="row">
+          <p>In November 2023, the CDC recommended testing every infant exposed to hepatitis C with a PCR test, which detects the virus itself, at 2–6 months, instead of waiting for an antibody test at 18 months or later, once the mother's antibodies have cleared. Waiting until 18 months meant many exposed infants were never tested at all.</p>
+          <p>The team's question sounded simple: <b>did practice actually change?</b> My job was to make it answerable with data the team could trust.</p>
+        </div>
+      </section>
+
+      <section id="h-metrics">
+        <p class="kicker">01 · Metric definition</p>
+        <h2>Defined 3 success metrics for a policy outcome</h2>
+        <div class="noted">
+          <div><p>I split one vague question into three measurable ones, each with a defined metric. "Did it work" could mean more tests, earlier tests, or fairer access.</p></div>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 84 44" style="transform:rotate(3deg)" aria-hidden="true"><path d="M78 10 C 66 4, 54 10, 58 20 C 61 28, 72 24, 68 16 C 63 8, 44 14, 30 24 C 22 30, 14 32, 7 31" stroke-width="2.3"/><path d="M7 31 C 11 28, 14 25, 16 22 M7 31 C 11 33, 15 35, 18 38" stroke-width="2.3"/></svg>
+            <span class="hand">same move as turning "is the feature working?" into a success metric</span>
+          </div>
+        </div>
+        <div class="metric3">
+          <div class="tile"><small class="tk">Impact</small><b>Did on-time testing rise?</b><span><strong>Measure:</strong> infants with a first PCR test at 2–6 months, per 1,000 births</span></div>
+          <div class="tile"><small class="tk">Timing</small><b>Are infants tested earlier, not just more often?</b><span><strong>Measure:</strong> cumulative share tested by age in months</span></div>
+          <div class="tile"><small class="tk">Equity</small><b>Did every group benefit?</b><span><strong>Measure:</strong> on-time testing by race and ethnicity, before vs. after</span></div>
+        </div>
+      </section>
+
+      <section id="h-data">
+        <p class="kicker">02 · Data engineering in R</p>
+        <h2>Built an analysis-ready cohort from 10 years of claims data</h2>
+        <div class="noted">
+          <div>
+            <p>Claims data isn't organized around the question. I built the cohort in R and solved four problems along the way:</p>
+            <ul class="hurdles">
+              <li><b>Split across files.</b> Test claims and birth records lived in separate files, so I joined them on enrollee ID.</li>
+              <li><b>10 years of yearly files.</b> I stacked a decade of HCV test claims, millions of records, into one table.</li>
+              <li><b>Every age, not just infants.</b> I kept only claims belonging to infants in the birth records.</li>
+              <li><b>Mothers mixed in.</b> Birth codes also matched mothers' delivery stays. I kept records where birth year equals admission year, a rule anyone on the team can audit.</li>
+            </ul>
+          </div>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 80 40" style="transform:rotate(-2deg)" aria-hidden="true"><path d="M76 22 C 70 14, 64 30, 57 21 C 51 13, 45 29, 38 20 C 32 13, 26 25, 18 21 L 7 19" stroke-width="2.5"/><path d="M7 19 L 15 12 M7 19 C 10 22, 13 25, 16 28" stroke-width="2.5"/></svg>
+            <span class="hand">caught a silent bug. without it, every rate would have been wrong</span>
+          </div>
+        </div>
+        <ol class="steps" aria-label="How the cohort was built">
+          <li><span class="v">1</span><b>Stack test claims</b><small>10 years of HCV test claims, millions of records, all ages</small></li>
+          <li><span class="v">2</span><b>Pull birth records</b><small>Birth-related hospital records</small></li>
+          <li><span class="v">3</span><b>Separate infants</b><small>Birth year = admission year removes mothers</small></li>
+          <li><span class="v">4</span><b>Join on enrollee ID</b><small>Link each infant to their test claims</small></li>
+          <li><span class="v">Result</span><b>Analysis-ready cohort</b><small>800K+ infants, one row each</small></li>
+        </ol>
+      </section>
+
+      <section id="h-quality">
+        <p class="kicker">03 · Data quality &amp; decision-making</p>
+        <h2>Set reporting rules so incomplete data couldn't mislead</h2>
+        <div class="row"><p>I chose to report less rather than show numbers that would mislead.</p></div>
+        <div class="noted">
+          <article class="call">
+            <div class="beats">
+              <div><span class="beat">The problem</span><p>Infants born in the most recent years hadn't reached 18–24 months by the end of the data, so their antibody testing looked artificially low, a falling line that invited the wrong conclusion.</p></div>
+              <div><span class="beat">My solution</span><p>End each series where infants were too young to finish the testing window, instead of reporting every year with an easy-to-miss caveat. Fewer data points, but every one can be trusted.</p></div>
+            </div>
+          </article>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 80 48" style="transform:rotate(5deg)" aria-hidden="true"><path d="M66 4 C 76 18, 66 34, 44 39 C 32 42, 20 41, 8 36" stroke-width="2.2"/><path d="M8 36 C 12 32, 15 29, 17 26 M8 36 C 12 39, 16 42, 19 45" stroke-width="2.2"/></svg>
+            <span class="hand">skill shown: knowing when data isn't ready to report</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="h-dash">
+        <p class="kicker">04 · Stakeholder communication</p>
+        <h2>Turned a 10-year analysis into answers decision-makers can act on</h2>
+        <div class="noted">
+          <div><p>The people who act on a testing guideline, like clinic leaders, public health teams and Medicaid program managers, need answers, not R code. I designed the dashboard around the four questions they would ask. Each tab answers one, leading with the finding instead of a chart to decode.</p></div>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 80 40" style="transform:rotate(-6deg)" aria-hidden="true"><path d="M74 28 C 56 30, 34 24, 10 16" stroke-width="2.8"/><path d="M10 16 L 19 10 M10 16 L 17 25 M12 17 L 20 22" stroke-width="2.1"/></svg>
+            <span class="hand">skill shown: translating analysis for decision-makers</span>
+          </div>
+        </div>
+        <div class="tiles" style="margin:24px 0 20px;max-width:948px">
+          <div class="tile"><small class="tk">Impact</small><b>Is the guideline working?</b><span>Observed testing vs. the trend expected without it</span></div>
+          <div class="tile"><small class="tk">Timing</small><b>Are infants tested early enough?</b><span>Now tested in months, not years</span></div>
+          <div class="tile"><small class="tk">Equity</small><b>Who is being left behind?</b><span>Every group improved, but the gaps didn't close</span></div>
+          <div class="tile"><small class="tk">Methods</small><b>Can I trust these numbers?</b><span>Cohort steps, decision log and definitions</span></div>
+        </div>
+        <p><a class="btn" href="https://public.tableau.com/views/IHPI-impact/Impact" target="_blank" rel="noopener">Open the live dashboard ↗</a></p>
+        <p class="fine">All dashboard values are synthetic and don't reflect real patients or study findings.</p>
+      </section>
+
+      <section id="h-impact">
+        <p class="kicker">05 · Impact &amp; reflection</p>
+        <h2>Impact on the research team</h2>
+        <div class="row"><p>The cohort, code and analysis I built became the baseline and core insights for the policy evaluation.</p></div>
+        <div class="shows2" style="margin-top:16px">
+          <div><b>What it enabled</b><span>A trusted baseline for U-M's Institute for Healthcare Policy and Innovation (IHPI), its researchers and policymakers to evaluate infant Hep C screening policy.</span></div>
+          <div><b>Scale</b><span>10 years of multi-state Medicaid claims · millions of records · 800K+ infants</span></div>
+          <div><b>What I'd do differently</b><span>[One thing you'd change next time, and why. For example, checking data completeness before building the first charts.]</span></div>
+        </div>
+        <div class="row">
+          <p class="fine" style="margin-top:28px">The study is unpublished, so every number on this page and in the dashboard is synthetic, except the rough data size.</p>
+          <p style="margin-top:32px"><a class="btn btn-ghost" href="#/work">Back to work</a></p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- BRIDGE SHORT READ -->
+<div class="page" data-page="bridge" hidden>
+  <div class="cs">
+    <aside class="rail" aria-label="Short read sections">
+      <a class="back" href="#/work">Back to work</a>
+      <a href="#" data-sec="b-context">What happened</a>
+      <a href="#" data-sec="b-shows">What this shows</a>
+      <a href="#" data-sec="b-plan">Original plan</a>
+      <a href="#" data-sec="b-bridge">The bridge</a>
+      <a href="#" data-sec="b-why">Why this design</a>
+    </aside>
+
+    <div class="cs-main">
+      <details class="sections-mobile">
+        <summary>Sections</summary>
+        <nav aria-label="Short read sections">
+          <a href="#" data-sec="b-context">What happened</a>
+          <a href="#" data-sec="b-shows">What this shows</a>
+          <a href="#" data-sec="b-plan">Original plan</a>
+          <a href="#" data-sec="b-bridge">The bridge</a>
+          <a href="#" data-sec="b-why">Why this design</a>
+        </nav>
+      </details>
+
+      <section id="b-context" class="cs-hero">
+        <h1>Microsoft shipped our product a week after I joined</h1>
+        <p class="cs-meta">AI Product Manager Intern, AI and Innovation Product Team, Novartis</p>
+        <p class="cs-role">Summer internship. I drafted the bridge strategy and roadmap presentation; the product belonged to the wider team.</p>
+        <div class="row"><p>I joined a team building a personal AI agent for general managers on Novartis's US commercial team. They run brands through cross-functional teams, with information scattered across decks, spreadsheets, and Confluence pages.</p></div>
+        <div class="noted">
+        <div><p>A week later, Microsoft announced Scout, an always-on agent for Microsoft 365 built for the same job. Novartis already runs on Microsoft, so adopting Scout would be easier and cheaper than finishing our own. But Scout had just launched as an early preview, and an enterprise rollout would take time.</p></div>
+        <div class="note">
+          <svg class="arr" viewBox="0 0 80 44" style="transform:rotate(-4deg)" aria-hidden="true"><path d="M74 34 C 60 42, 38 40, 24 28 C 18 23, 13 17, 9 10" stroke-width="2.6"/><path d="M9 10 C 9.5 15, 10.5 19, 12 23 M9 10 C 13 12, 17 13, 21 13" stroke-width="2.4"/></svg>
+          <span class="hand">adopt &gt; build, so the whole strategy flipped</span>
+        </div>
+      </div>
+        <div class="noted">
+        <div><p>So the question became what to build until then. <span class="hl">I drafted the strategy and a roadmap presentation</span> showing each step, why it mattered, and how it would work.</p></div>
+        <div class="note">
+          <svg class="arr" viewBox="0 0 84 46" style="transform:rotate(2deg)" aria-hidden="true"><path d="M78 40 C 70 22, 50 10, 30 12 C 22 13, 15 16, 9 21" stroke-width="2.4"/><path d="M9 21 C 12 17, 14 13, 15 9 M9 21 C 14 22, 18 24, 21 26" stroke-width="2.4"/></svg>
+          <span class="hand">approved by my manager!</span>
+        </div>
+      </div>
+      </section>
+
+      <section id="b-shows">
+        <h2>What this shows</h2>
+        <div class="shows2">
+        <div><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h11a5 5 0 0 1 0 10H8"/><path d="m11 13.5-3.5 3.5L11 20.5"/></svg></span><b>Strategic reframing</b><span>Moved the goal from building our own agent to bridging to Scout</span></div>
+        <div><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M7 20h10M5 7h14"/><path d="m5 7-3 7h6zM19 7l-3 7h6z"/></svg></span><b>Build vs. buy judgment</b><span>Saw that adopting Scout beat finishing our own</span></div>
+        <div><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="18" r="2.5"/><circle cx="18.5" cy="6" r="2.5"/><path d="M8 18h6.5a3.5 3.5 0 0 0 0-7h-5a3.5 3.5 0 0 1 0-7H16"/></svg></span><b>Plans that survive change</b><span>Value now, and an easier switch later</span></div>
+      </div>
+      </section>
+
+      <section id="b-plan">
+        <h2>Our original plan</h2>
+        <div class="row"><p>One personal agent per general manager, pulling scattered information into one place.</p></div>
+        <div class="flowv" aria-label="Scattered sources go into a personal AI agent, which produces status reports, out-of-office catch-ups, and answers with sources">
+        <div class="srcs">
+          <span class="chip2 t1"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg></span>Slide decks</span>
+          <span class="chip2 t2"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="2"/><path d="M3.5 10h17M3.5 14.5h17M9.5 5v14M15 5v14"/></svg></span>Spreadsheets</span>
+          <span class="chip2 t3"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h7M9 16h5"/></svg></span>Confluence pages</span>
+        </div>
+        <span class="flowarrow" aria-hidden="true"></span>
+        <div class="agent"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.6 4.2 2.8 6.4 7 7-4.2.6-6.4 2.8-7 7-.6-4.2-2.8-6.4-7-7 4.2-.6 6.4-2.8 7-7z"/><path d="M19 16c.2 1.5 1 2.3 2.5 2.5-1.5.2-2.3 1-2.5 2.5-.2-1.5-1-2.3-2.5-2.5 1.5-.2 2.3-1 2.5-2.5z"/></svg></span><b>Personal AI agent</b><span>one per general manager</span></div>
+        <span class="flowarrow" aria-hidden="true"></span>
+        <div class="outs">
+          <span class="chip2 out"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M8.5 10h7M8.5 14h7M8.5 18h4"/></svg></span>Status reports</span>
+          <span class="chip2 out"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 20.5 4l-4 16-5-5.5L3 11.5z"/><path d="M11.5 14.5 20.5 4"/></svg></span>Out-of-office catch-up</span>
+          <span class="chip2 out"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5.5 5.5"/></svg></span>Answers with sources</span>
+        </div>
+      </div>
+
+      </section>
+
+      <section id="b-bridge">
+        <h2>The bridge I designed</h2>
+        <div class="row"><p>A four-step roadmap from now until Scout is ready for the enterprise.</p></div>
+        <div class="path" role="list" aria-label="Bridge roadmap from now until Scout is ready">
+        <div class="stop nr" role="listitem"><span class="dot">1</span><span class="kind">No-regret</span><b>Make information AI-readable</b><span class="d">Key documents in formats any AI tool can read</span></div>
+        <div class="stop nr" role="listitem"><span class="dot">2</span><span class="kind">No-regret</span><b>Organize the data</b><span class="d">A clear, consistent structure for documents</span></div>
+        <div class="stop tmp" role="listitem"><span class="dot">3</span><span class="kind">Temporary</span><b>Small in-house agent</b><span class="d">Covers part of the job now, built to be retired</span></div>
+        <div class="stop dst" role="listitem"><span class="dot">4</span><span class="kind">Destination</span><b>Move to Scout</b><span class="d">Switch once it's ready for the enterprise</span></div>
+      </div>
+      <div class="path-ends" aria-hidden="true"><span>Now</span><span>Scout ready</span></div>
+      </section>
+
+      <section id="b-why">
+        <h2>Why I designed it this way</h2>
+        <div class="noted">
+        <div><p><b>Start with the data.</b> Making documents AI-readable and giving them a clear structure pays off whichever tool we end up using, Scout included.</p></div>
+        <div class="note">
+          <svg class="arr" viewBox="0 0 84 44" style="transform:rotate(3deg)" aria-hidden="true"><path d="M78 10 C 66 4, 54 10, 58 20 C 61 28, 72 24, 68 16 C 63 8, 44 14, 30 24 C 22 30, 14 32, 7 31" stroke-width="2.3"/><path d="M7 31 C 11 28, 14 25, 16 22 M7 31 C 11 33, 15 35, 18 38" stroke-width="2.3"/></svg>
+          <span class="hand">no clean data, no smart AI</span>
+        </div>
+      </div>
+        <div class="noted">
+        <div><p><b>Keep the in-house agent small.</b> It covers part of the job in the meantime, without becoming something the team has to maintain or unwind later.</p></div>
+        <div class="note">
+          <svg class="arr" viewBox="0 0 80 40" style="transform:rotate(-2deg)" aria-hidden="true"><path d="M76 22 C 70 14, 64 30, 57 21 C 51 13, 45 29, 38 20 C 32 13, 26 25, 18 21 L 7 19" stroke-width="2.5"/><path d="M7 19 L 15 12 M7 19 C 10 22, 13 25, 16 28" stroke-width="2.5"/></svg>
+          <span class="hand">small on purpose, easy to retire</span>
+        </div>
+      </div>
+        <div class="noted">
+        <div><p><b>Point every step toward Scout.</b> The roadmap ends with the switch, so moving over is a handoff, not a rebuild.</p></div>
+        <div class="note">
+          <svg class="arr" viewBox="0 0 80 48" style="transform:rotate(5deg)" aria-hidden="true"><path d="M66 4 C 76 18, 66 34, 44 39 C 32 42, 20 41, 8 36" stroke-width="2.2"/><path d="M8 36 C 12 32, 15 29, 17 26 M8 36 C 12 39, 16 42, 19 45" stroke-width="2.2"/></svg>
+          <span class="hand">every step leads to Scout, nothing wasted</span>
+        </div>
+      </div>
+        <div class="row">
+          <p class="fine" style="margin-top:28px">Microsoft announced Scout at Build 2026 as the first of its "Autopilot" agents for Microsoft 365, initially as an experimental preview.</p>
+          <p style="margin-top:32px"><a class="btn btn-ghost" href="#/work">Back to work</a></p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- CASE STUDY -->
+<div class="page" data-page="novartis" hidden>
+  <div class="cs">
+    <aside class="rail" aria-label="Case study sections">
+      <a class="back" href="#/work">Back to work</a>
+      <a href="#" data-sec="overview">Overview</a>
+      <a href="#" data-sec="insight">The insight</a>
+      <a href="#" data-sec="ask">The ask</a>
+      <a href="#" data-sec="ai">AI design</a>
+      <a href="#" data-sec="calls">Product calls</a>
+      <a href="#" data-sec="roadmap">Roadmap</a>
+      <a href="#" data-sec="outcome">Outcome</a>
+    </aside>
+
+    <div class="cs-main">
+      <details class="sections-mobile">
+        <summary>Sections</summary>
+        <nav aria-label="Case study sections">
+          <a href="#" data-sec="overview">Overview</a>
+          <a href="#" data-sec="insight">The insight</a>
+          <a href="#" data-sec="ask">The ask</a>
+          <a href="#" data-sec="ai">AI design</a>
+          <a href="#" data-sec="calls">Product calls</a>
+          <a href="#" data-sec="roadmap">Roadmap</a>
+          <a href="#" data-sec="outcome">Outcome</a>
+        </nav>
+      </details>
+
+      <section id="overview" class="cs-hero">
+        <h1>Reps had a year of notes and no time to read them</h1>
+        <p class="cs-meta">AI Product Manager Intern, AI and Innovation Product Team, Novartis</p>
+        <p class="cs-role">Summer internship, 10 weeks. I owned discovery, requirements, and the MVP definition; engineering owned implementation.</p>
+        <div class="noted">
+          <div>
+            <p>Leadership asked for an AI summary for field sales, with one firm rule: the AI could inform reps but never steer them. I turned that one-line ask into a grounded, compliance-safe MVP and roadmap that leadership approved and engineering committed to build.</p>
+            <div class="cs-stats">
+              <div class="cs-stat"><b>$30M</b><span>estimated benefit</span></div>
+              <div class="cs-stat"><b>~30%</b><span>less call-prep time</span></div>
+            </div>
+            <p class="fine">Both figures are the product lead's estimates. The $30M is based on rep headcount, prep hours saved, and rep salary.</p>
+          </div>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 80 40" style="transform:rotate(-6deg)" aria-hidden="true"><path d="M74 28 C 56 30, 34 24, 10 16" stroke-width="2.8"/><path d="M10 16 L 19 10 M10 16 L 17 25 M12 17 L 20 22" stroke-width="2.1"/></svg>
+            <span class="hand">approved by leadership, Q4 build committed!</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="insight">
+        <h2>The insight that shaped everything</h2>
+        <div class="noted">
+          <div>
+            <p class="lede">Reps can keep track of one doctor. Nobody can keep track of a hospital.</p>
+            <blockquote><p>"Before I visit a hospital, I want to know what my colleagues have already heard there."</p><cite>Field rep, paraphrased from interviews</cite></blockquote>
+            <p>Before visiting a healthcare organization, a rep needs to know <span class="hl">what every colleague has learned there, across every doctor they've met</span>. That context was buried in piles of free-text notes no one had time to read. So I scoped the AI to summarize the whole organization, not the individual doctor.</p>
+          </div>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 84 44" style="transform:rotate(3deg)" aria-hidden="true"><path d="M78 10 C 66 4, 54 10, 58 20 C 61 28, 72 24, 68 16 C 63 8, 44 14, 30 24 C 22 30, 14 32, 7 31" stroke-width="2.3"/><path d="M7 31 C 11 28, 14 25, 16 22 M7 31 C 11 33, 15 35, 18 38" stroke-width="2.3"/></svg>
+            <span class="hand">this one line reshaped the whole MVP</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="ask">
+        <h2>The ask</h2>
+        <div class="row">
+          <p>Novartis field reps log every doctor visit in Veeva CRM, the sales platform built for pharma. A year earlier, the team had added free-text notes so reps could capture what dropdowns couldn't. The notes piled up faster than anyone could read them.</p>
+          <p>Leadership wanted AI summaries to help reps prepare for their next visits. My job was to make that specific enough to build, inside a company where AI use is tightly governed. In pharma terms, a doctor is an <b>HCP</b> and a hospital or clinic network is an <b>HCO</b>.</p>
+        </div>
+        <h3>Each round of input reshaped the plan</h3>
+        <ol class="steps">
+          <li><span class="v">v1</span><b>Leadership</b><small>Backlog, data flow, user stories, Figma prototype</small></li>
+          <li><span class="v">v2</span><b>5 field reps</b><small>Use cases rewritten, scoped to the HCO, needs prioritized</small></li>
+          <li><span class="v">v3</span><b>Engineering lead</b><small>Retrieval redesigned to fit existing data</small></li>
+          <li><span class="v">v4</span><b>UX team</b><small>Summary placed on the HCO profile page</small></li>
+          <li><span class="v">Handoff</span><b>Approved</b><small>Leadership approved; engineering committed the MVP for Q4</small></li>
+        </ol>
+      </section>
+
+      <section id="ai">
+        <h2>Designing an AI reps can trust</h2>
+        <div class="row">
+          <p>Leadership was firm: the AI reports what happened, and the rep decides what to do. Reps would only rely on a summary they could verify, so I designed around one rule: <span class="hl">nothing appears in a summary without a source behind it</span>.</p>
+        </div>
+        <h3>Eight AI decisions behind one summary</h3>
+        <div class="map">
+          <div class="map-group">
+            <p>What reps see and trust</p>
+            <div class="tiles">
+              <div class="tile"><b>Grounding</b><span>Every theme links to its source notes</span></div>
+              <div class="tile"><b>Guardrails</b><span>Six guardrails; says so when data is thin</span></div>
+              <div class="tile"><b>Output format</b><span>One-line themes, evidence on demand</span></div>
+              <div class="tile"><b>Sensitive content</b><span>Compliance checks on input and output</span></div>
+            </div>
+          </div>
+          <div class="map-group">
+            <p>How it runs and improves</p>
+            <div class="tiles">
+              <div class="tile"><b>Summarization</b><span>One-year lookback fits in context</span></div>
+              <div class="tile"><b>Freshness and speed</b><span>Generated on open, then stored</span></div>
+              <div class="tile"><b>Model choice</b><span>Reused the model already in use</span></div>
+              <div class="tile planned"><b>Evaluation</b><span>Rubric, test set, and pilot (proposed)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Trust: every line can be verified</h3>
+        <div class="row">
+          <p>Each theme is one scannable sentence, because reps skim before a visit. A drop-down reveals supporting excerpts from past notes, and each excerpt links to the full original note with the relevant passage highlighted. Every summary ends with the list of calls it drew on, with each call's date and HCP, so reps know exactly what it covers.</p>
+        </div>
+        <div class="mock" aria-label="Illustrative mockup of an HCO summary">
+          <p class="mock-title">Recurring themes at this HCO</p>
+          <div class="chips" aria-hidden="true"><span class="chip">3 calls</span><span class="chip on">3 months</span><span class="chip">1 year</span></div>
+          <details open>
+            <summary><span class="num">1</span><span class="t">Pharmacy is asking about formulary timing</span><span class="src">2 sources</span></summary>
+            <div class="ev">
+              <div><span class="num" style="float:left;margin:2px 10px 0 0">2</span><em>"Pharmacist asked when the P&amp;T review happens"</em><small>Jul 12, Dr. Lee. <u>View note</u> <span class="num" style="width:18px;height:18px;font-size:11px;vertical-align:-3px">3</span></small></div>
+              <div style="padding-left:32px"><em>"Formulary decision expected next quarter"</em><small>Aug 2, Dr. Patel. <u>View note</u></small></div>
+            </div>
+          </details>
+          <details><summary><span class="t" style="padding-left:30px">Two doctors requested new dosing data</span><span class="src">2 sources</span></summary><div class="ev"><div><small>Excerpts and source links appear here.</small></div></div></details>
+          <details><summary><span class="t" style="padding-left:30px">Follow-up owed on patient support</span><span class="src">3 sources</span></summary><div class="ev"><div><small>Excerpts and source links appear here.</small></div></div></details>
+          <p class="foot"><span class="num" style="width:18px;height:18px;font-size:11px;margin-right:6px">4</span>Summarized from 7 calls, May 20 to Aug 14, with Dr. Lee, Dr. Patel, Dr. Gomez, and 2 more</p>
+        </div>
+        <ol class="legend">
+          <li><span class="num">1</span><span><b>One sentence per theme</b>, scannable in seconds</span></li>
+          <li><span class="num">2</span><span><b>Evidence on demand</b>, excerpts from colleagues' notes</span></li>
+          <li><span class="num">3</span><span><b>Every claim has a source</b> that opens the original note, highlighted</span></li>
+          <li><span class="num">4</span><span><b>Coverage footer</b> shows what was summarized, or says when notes are too few</span></li>
+        </ol>
+        <p class="fine">Illustrative mockup. Names, dates, and content are invented.</p>
+
+        <h3>Accuracy: six guardrails against hallucination</h3>
+        <div class="noted">
+          <div><p>I specified six requirements for engineering. Each one closes a different way an AI summary can go wrong.</p></div>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 80 40" style="transform:rotate(-2deg)" aria-hidden="true"><path d="M76 22 C 70 14, 64 30, 57 21 C 51 13, 45 29, 38 20 C 32 13, 26 25, 18 21 L 7 19" stroke-width="2.5"/><path d="M7 19 L 15 12 M7 19 C 10 22, 13 25, 16 28" stroke-width="2.5"/></svg>
+            <span class="hand">no source, no theme</span>
+          </div>
+        </div>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Guardrail</th><th>What it does</th><th>Risk it closes</th></tr></thead>
+            <tbody>
+              <tr><td>Retrieval-grounded generation</td><td>The model sees only the cleared notes for that HCO and lookback window, nothing else</td><td>Outside knowledge or other accounts leaking in</td></tr>
+              <tr><td>Citation-required output</td><td>Every theme carries the IDs of its source notes; themes without citations are discarded</td><td>Invented themes</td></tr>
+              <tr><td>Verbatim evidence</td><td>Excerpts are copied from the notes, not generated, and a check confirms each one exists in its source</td><td>Fabricated quotes</td></tr>
+              <tr><td>Structured output</td><td>A fixed format of theme, evidence, and note IDs instead of free prose</td><td>Summaries drifting into advice</td></tr>
+              <tr><td>Low temperature</td><td>Minimal creative variation in generation</td><td>Inconsistent or embellished summaries</td></tr>
+              <tr><td>Minimum-evidence threshold</td><td>Fewer than three notes returns "not enough history" instead of themes</td><td>Guessing from thin data</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Safety: compliance on both ends</h3>
+        <div class="row">
+          <p>Notes already passed through a compliance loop: an AI screens each submitted note for risk, flagged notes go to a human reviewer, and rejected notes are dropped. I fed the summary only notes that had cleared that loop, joined with call data from Veeva, into the model the product already used. Every generated summary then runs through its own compliance check before a rep sees it. A summary can never bring back content compliance already removed.</p>
+        </div>
+        <figure class="flow" style="margin-left:0;margin-right:0">
+          <svg viewBox="0 0 760 440" role="img" aria-labelledby="flow-t flow-d">
+            <title id="flow-t">AI summary data flow</title>
+            <desc id="flow-d">An existing compliance loop screens every note. Only approved notes are joined with Veeva call data, summarized with cited note IDs, checked for verbatim quotes and compliance, then shown to reps.</desc>
+            <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="arrowhead" d="M0 0L10 5L0 10z"/></marker></defs>
+            <rect class="lane" x="24" y="20" width="712" height="172" rx="12"/>
+            <text class="lanelab" x="40" y="44">Already built: note compliance loop</text>
+            <rect class="lane2" x="24" y="216" width="712" height="200" rx="12"/>
+            <text class="lanelab" x="40" y="240" style="fill:var(--ink)">My design: summary pipeline</text>
+            <g class="ln">
+              <path d="M185 84H255" marker-end="url(#ah)"/>
+              <path d="M405 84H545" marker-end="url(#ah)"/>
+              <path d="M330 106V134" marker-end="url(#ah)"/>
+              <path d="M255 156H185" marker-end="url(#ah)"/>
+              <path d="M405 156H600V106" marker-end="url(#ah)"/>
+              <path d="M652 106V252" marker-end="url(#ah)"/>
+              <path d="M405 278H577" marker-end="url(#ah)"/>
+              <path d="M652 304V324" marker-end="url(#ah)"/>
+              <path d="M582 350H546" marker-end="url(#ah)"/>
+              <path d="M406 350H370" marker-end="url(#ah)"/>
+              <path d="M230 350H194" marker-end="url(#ah)"/>
+            </g>
+            <text class="lab" x="475" y="76" text-anchor="middle">clear</text>
+            <text class="lab" x="338" y="124">flagged</text>
+            <text class="lab" x="220" y="148" text-anchor="middle">rejected</text>
+            <text class="lab" x="502" y="148" text-anchor="middle">approved</text>
+            <rect class="box" x="35" y="62" width="150" height="44" rx="8"/><text x="110" y="88" text-anchor="middle">Rep writes note</text>
+            <rect class="box" x="255" y="62" width="150" height="44" rx="8"/><text x="330" y="88" text-anchor="middle">AI risk screen</text>
+            <rect class="box" x="545" y="62" width="150" height="44" rx="8"/><text x="620" y="88" text-anchor="middle">Approved notes</text>
+            <rect class="box" x="255" y="134" width="150" height="44" rx="8"/><text x="330" y="160" text-anchor="middle">Human review</text>
+            <rect class="box" x="35" y="134" width="150" height="44" rx="8"/><text x="110" y="160" text-anchor="middle" style="fill:var(--quiet)">Note dropped</text>
+            <rect class="box" x="255" y="252" width="150" height="52" rx="8"/><text x="330" y="275" text-anchor="middle">Veeva call data</text><text class="sub" x="330" y="292" text-anchor="middle">date, HCO, call ID</text>
+            <rect class="box" x="577" y="252" width="150" height="52" rx="8"/><text x="652" y="275" text-anchor="middle">Join by call ID</text><text class="sub" x="652" y="292" text-anchor="middle">cleared notes only</text>
+            <rect class="box" x="582" y="324" width="140" height="52" rx="8"/><text x="652" y="347" text-anchor="middle">AI summarizer</text><text class="sub" x="652" y="364" text-anchor="middle">cites note IDs</text>
+            <rect class="box" x="406" y="324" width="140" height="52" rx="8"/><text x="476" y="347" text-anchor="middle">Quote check</text><text class="sub" x="476" y="364" text-anchor="middle">verbatim match</text>
+            <rect class="box" x="230" y="324" width="140" height="52" rx="8"/><text x="300" y="347" text-anchor="middle">Compliance check</text><text class="sub" x="300" y="364" text-anchor="middle">every summary</text>
+            <rect class="box key" x="54" y="324" width="140" height="52" rx="8"/><text x="124" y="347" text-anchor="middle" style="font-weight:600">HCO summary</text><text class="sub" x="124" y="364" text-anchor="middle" style="fill:var(--ink)">shown to reps</text>
+          </svg>
+        </figure>
+
+        <h3>System: fast, consistent, affordable</h3>
+        <div class="row">
+          <p><span class="label">Summarization strategy.</span> Context length was not a constraint, even at a one-year lookback, so the summary could cover whatever window a rep chose.</p>
+          <p><span class="label">Freshness and speed.</span> The tech lead confirmed generation was fast, so summaries are created when a rep first opens an HCO page, then stored and reused. Reps see the same summary each time they return, which builds trust, and the product saves tokens and load time.</p>
+          <p><span class="label">Model choice.</span> The summary runs on the model the product already used, rather than introducing a new one.</p>
+        </div>
+
+        <h3>Quality: how I'd evaluate it</h3>
+        <div class="row">
+          <p>The internship ended before evaluation could run, so I scoped an evaluation plan for the team to use before launch. It tests the summary against leadership's core rule as well as for accuracy.</p>
+        </div>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Check</th><th>Question it answers</th><th>How</th></tr></thead>
+            <tbody>
+              <tr><td>Faithfulness</td><td>Is every theme supported by the notes it cites?</td><td>Reviewers check sampled summaries line by line against their source notes</td></tr>
+              <tr><td>Coverage</td><td>Did the summary miss anything important?</td><td>Reviewers read all notes for sampled HCOs and compare them with the themes</td></tr>
+              <tr><td>Neutrality</td><td>Does it report without advising?</td><td>Reviewers flag any recommendation or opinion language</td></tr>
+              <tr><td>Citation integrity</td><td>Do cited note IDs and excerpts match real notes?</td><td>Logged automatically from the pipeline's quote check</td></tr>
+              <tr><td>Edge cases</td><td>Does it hold up on thin or long histories?</td><td>A test set with fewer than three notes, one-year windows, and busy vs. quiet brands</td></tr>
+              <tr><td>Real-world value</td><td>Does it actually help reps?</td><td>Pilot metrics: prep time, source-open rate, adoption</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row">
+          <p>Faithfulness and neutrality are the launch gates. A summary that invents a theme or offers advice breaks the one rule leadership set, so it would block launch regardless of how useful reps found it.</p>
+          <p class="fine">Proposed plan; not yet run.</p>
+        </div>
+      </section>
+
+      <section id="calls">
+        <h2>Three product calls that shaped the MVP</h2>
+
+        <div class="noted">
+          <article class="call">
+            <h3>Reps asked for everything</h3>
+            <div class="beats">
+              <div><span class="beat">The problem</span><p>Interviews surfaced three needs. The loudest, BI integration, was also the hardest.</p></div>
+              <div><span class="beat">My call</span><p>Score each need on feasibility, user value, and business value. Ship one.</p></div>
+              <div><span class="beat">The result</span><p>Organization-level themes became the MVP. The other two became phases 2 and 3.</p></div>
+            </div>
+            <div class="score" role="table" aria-label="How each need scored">
+              <div class="score-row score-head" role="row"><span role="columnheader">Need</span><span role="columnheader">Feasible</span><span role="columnheader">User value</span><span role="columnheader">Business value</span><span role="columnheader"></span></div>
+              <div class="score-row" role="row"><span role="cell">Recurring themes across an HCO</span><span role="cell" class="dots" aria-label="High"><i></i><i></i><i></i></span><span role="cell" class="dots" aria-label="High"><i></i><i></i><i></i></span><span role="cell" class="dots" aria-label="High"><i></i><i></i><i></i></span><span role="cell"><b class="pill pick">MVP</b></span></div>
+              <div class="score-row" role="row"><span role="cell">Account handoff summaries</span><span role="cell" class="dots" aria-label="Medium"><i></i><i></i><i class="o"></i></span><span role="cell" class="dots" aria-label="Medium"><i></i><i></i><i class="o"></i></span><span role="cell" class="dots" aria-label="Medium"><i></i><i></i><i class="o"></i></span><span role="cell"><b class="pill">Phase 2</b></span></div>
+              <div class="score-row" role="row"><span role="cell">BI platform integration</span><span role="cell" class="dots" aria-label="Low"><i></i><i class="o"></i><i class="o"></i></span><span role="cell" class="dots" aria-label="Medium to high"><i></i><i></i><i class="h"></i></span><span role="cell" class="dots" aria-label="Low"><i></i><i class="o"></i><i class="o"></i></span><span role="cell"><b class="pill">Phase 3</b></span></div>
+            </div>
+            <details class="more">
+              <summary>What reps said, and why each rating</summary>
+              <blockquote>
+                <p><b>Recurring themes:</b> "I want to see what my colleagues have been hearing across the whole organization."</p>
+                <p><b>Account handoff:</b> "When I take over an account, I need to pick up where the last rep left off."</p>
+                <p><b>BI integration:</b> "My notes and my sales numbers live in different systems."</p>
+                <cite>Paraphrased from interviews with five reps</cite>
+              </blockquote>
+              <p>BI integration needed data agreements with several platform teams, went beyond leadership's focus on free text, and depended on the summary existing first. Handoffs were valuable but infrequent. Ratings are recreated from memory and were validated with leadership.</p>
+            </details>
+          </article>
+          <div class="note">
+            <svg class="arr" viewBox="0 0 80 48" style="transform:rotate(5deg)" aria-hidden="true"><path d="M66 4 C 76 18, 66 34, 44 39 C 32 42, 20 41, 8 36" stroke-width="2.2"/><path d="M8 36 C 12 32, 15 29, 17 26 M8 36 C 12 39, 16 42, 19 45" stroke-width="2.2"/></svg>
+            <span class="hand">loudest ask ≠ first priority</span>
+          </div>
+        </div>
+
+        <article class="call">
+          <h3>Engineering said the data couldn't support it</h3>
+          <div class="beats">
+            <div><span class="beat">The problem</span><p>Notes were stored by call ID only, with no date or HCO. My design needed a database rebuild.</p></div>
+            <div><span class="beat">My call</span><p>Join, don't rebuild. Veeva's call records already hold the date and HCO for every call ID.</p></div>
+            <div><span class="beat">The result</span><p>The MVP runs on the existing database, with none of the rework engineering flagged.</p></div>
+          </div>
+          <div class="join" aria-label="Our notes, keyed by call ID, joined with Veeva call records to get date and HCO">
+            <span class="chipbox">Our notes<small>call ID, text</small></span>
+            <span class="op">+</span>
+            <span class="chipbox">Veeva call records<small>call ID, date, HCO</small></span>
+            <span class="op">=</span>
+            <span class="chipbox on">Notes by HCO and date<small>no schema change</small></span>
+          </div>
+        </article>
+
+        <article class="call">
+          <h3>Reps couldn't agree how far back to look</h3>
+          <div class="beats">
+            <div><span class="beat">The problem</span><p>Busy brands need one to three months of history. Quiet brands can need a full year.</p></div>
+            <div><span class="beat">My call</span><p>Let reps choose: the last 3 calls, the last 3 months, or the last year.</p></div>
+            <div><span class="beat">The result</span><p>Instead of guessing a default, the MVP learns one from what reps pick.</p></div>
+          </div>
+          <blockquote class="short"><p>"For a quiet brand, I might go back a year just to find three visits."</p><cite>Field rep, paraphrased</cite></blockquote>
+        </article>
+      </section>
+
+      <section id="roadmap">
+        <h2>Roadmap and handoff</h2>
+        <div class="row"><p>The roadmap sequences features by dependency, not just by rank: both later phases reuse the summary the MVP builds.</p></div>
+        <div class="road">
+          <div><small>MVP</small><b>HCO recurring themes</b><span>A summary across all HCPs in one organization. Reps choose the lookback: 3 calls, 3 months, or 1 year.</span></div>
+          <div><small>Phase 2</small><b>Account handoff</b><span>HCP- and HCO-level summaries so reps can pick up where a colleague left off.</span></div>
+          <div><small>Phase 3</small><b>BI platform integration</b><span>Free-text summaries joined with quantitative BI data in one place.</span></div>
+        </div>
+        <div class="row">
+          <p style="margin-top:20px">At handoff, engineering received a prioritized backlog for the MVP and later phases, Apex user stories with acceptance criteria, a technical data flow, a Figma prototype of the summary on the HCO profile, and the three-phase roadmap with success metrics.</p>
+        </div>
+        <div class="story">
+          <p><b>As a</b> field rep preparing to visit a healthcare organization, <b>I want</b> a summary of recurring themes from my colleagues' recent notes there, <b>so that</b> I walk in knowing what has already been discussed.</p>
+          <ul>
+            <li>Given I'm on an HCO profile, when I open the summary, then it covers cleared notes from every HCP in that HCO.</li>
+            <li>Given I choose a lookback window, then only notes within that window are summarized.</li>
+            <li>Given a theme is shown, when I expand it, then I see its supporting excerpts, each linking to the original note with the passage highlighted.</li>
+            <li>Given fewer than three notes exist in the window, then the summary says there isn't enough history instead of generating themes.</li>
+            <li>Given any summary, then it lists the calls it drew on, with each call's date and HCP.</li>
+          </ul>
+        </div>
+        <p class="fine row">A sample from the backlog, recreated in the format I used; the wording is illustrative.</p>
+      </section>
+
+      <section id="outcome">
+        <h2>Outcome</h2>
+        <div class="row">
+          <p>Leadership approved the plan and adopted it as proposed, and engineering committed to building the MVP in Q4. The product lead estimates about $30M in benefit from time saved and better-quality interactions, including roughly 30% less time spent preparing for calls.</p>
+          <p><span class="label">How we'll know it worked:</span> call-prep time saved, measured in a pilot; the share of reps who open the summary before HCO visits; how often they open sources to verify a theme; and which lookback window they choose. Summary quality gets checked by human review against the source notes. The guardrail is that reps keep writing notes at the same rate, because summaries are only as good as the notes behind them.</p>
+          <p style="margin-top:32px"><a class="btn btn-ghost" href="#/work">Back to work</a></p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="foot-in">
+    <p>Xandra Bai, product manager</p>
+    <div class="foot-links">
+      <a href="mailto:hanbai@umich.edu">Email</a>
+      <a href="https://www.linkedin.com/in/xandra-han-bai" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#/resume">Resume</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var pages = document.querySelectorAll('.page');
+  var titles = {home:'Xandra Bai, product manager', work:'Work, Xandra Bai', about:'About, Xandra Bai', resume:'Resume, Xandra Bai', novartis:'Novartis case study, Xandra Bai', bridge:'Bridge strategy, Xandra Bai', hepc:'Hep C impact evaluation, Xandra Bai', instructure:'Instructure case study, Xandra Bai'};
+  function route(){
+    var h = location.hash.replace(/^#\/?/, '');
+    var key = 'home';
+    if (h === 'work') key = 'work';
+    else if (h === 'about') key = 'about';
+    else if (h === 'resume') key = 'resume';
+    else if (h === 'work/novartis') key = 'novartis';
+    else if (h === 'work/bridge') key = 'bridge';
+    else if (h === 'work/hepc') key = 'hepc';
+    else if (h === 'work/instructure') key = 'instructure';
+    pages.forEach(function(p){ p.hidden = p.getAttribute('data-page') !== key; });
+    document.querySelectorAll('[data-nav]').forEach(function(a){
+      var on = a.getAttribute('data-nav') === key || ((key === 'novartis' || key === 'bridge' || key === 'hepc' || key === 'instructure') && a.getAttribute('data-nav') === 'work');
+      if (on) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
+    });
+    document.title = titles[key];
+    window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange', route);
+  route();
+
+
+  document.querySelectorAll('[data-orbit]').forEach(function(el){
+    var st = el.closest('.o-stage'); if (!st) return;
+    var k = el.getAttribute('data-orbit');
+    function on(){ st.setAttribute('data-active', k); }
+    function off(){ if (st.getAttribute('data-active') === k) st.removeAttribute('data-active'); }
+    el.addEventListener('mouseenter', on); el.addEventListener('focus', on);
+    el.addEventListener('mouseleave', off); el.addEventListener('blur', off);
+  });
+
+  document.querySelectorAll('[data-placeholder]').forEach(function(a){
+    a.addEventListener('click', function(e){ e.preventDefault(); });
+  });
+
+  document.querySelectorAll('[data-sec]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var t = document.getElementById(a.getAttribute('data-sec'));
+      if (t) t.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block:'start'});
+      var d = a.closest('details'); if (d) d.open = false;
+    });
+  });
+
+  if ('IntersectionObserver' in window) {
+    document.querySelectorAll('.rail').forEach(function(rail){
+      var links = rail.querySelectorAll('[data-sec]');
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if (en.isIntersecting) {
+            links.forEach(function(l){ l.classList.toggle('active', l.getAttribute('data-sec') === en.target.id); });
+          }
+        });
+      }, {rootMargin:'-30% 0px -60% 0px'});
+      links.forEach(function(l){ var el = document.getElementById(l.getAttribute('data-sec')); if (el) io.observe(el); });
+    });
+  }
+})();
+</script>
+</body>
+</html>
