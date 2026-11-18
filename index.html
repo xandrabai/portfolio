@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtm.js?id=G-H242JNGLJP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Xandra Bai, product manager</title>
@@ -100,6 +106,73 @@ main{padding-top:calc(var(--bar) + 8px)}
 .placeholder h3{font-size:22px}
 .placeholder p{color:var(--quiet);margin:6px 0 0}
 
+/* homepage project showcase */
+.showcase-home{padding:72px 0 80px}
+.showcase-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}
+.showcase-hero-title{font-size:clamp(34px,4.6vw,58px);line-height:1.06;width:100%;max-width:none;margin:0 0 64px}
+.showcase-underline{background:linear-gradient(transparent 62%,var(--o-hl) 62%,var(--o-hl) 91%,transparent 91%);padding:0 3px}
+.showcase-heading h2{font-size:clamp(30px,4.4vw,46px)}
+.showcase-heading p{color:var(--quiet);font-size:18px;margin:12px 0 0;max-width:560px}
+.showcase-controls{display:flex;gap:10px;flex:none}
+.showcase-arrow{width:44px;height:44px;border:1.5px solid var(--lavender);border-radius:50%;background:var(--paper);color:var(--ink);display:grid;place-items:center;cursor:pointer;transition:background .15s,border-color .15s,transform .15s}
+.showcase-arrow:hover:not(:disabled){background:var(--lilac);border-color:var(--pen);transform:translateY(-1px)}
+.showcase-arrow:disabled{opacity:.35;cursor:not-allowed}
+.showcase-arrow svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.showcase-track{display:grid;grid-auto-flow:column;grid-auto-columns:28.75%;gap:20px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 4px 14px;margin:0 -4px}
+.showcase-track::-webkit-scrollbar{display:none}
+.showcase-card{min-width:0;display:flex;flex-direction:column;min-height:100%;border:1px solid var(--lavender);border-radius:16px;background:var(--paper);box-shadow:0 4px 0 rgba(48,22,120,.05),0 10px 24px rgba(48,22,120,.1);overflow:hidden;text-decoration:none;scroll-snap-align:start;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.showcase-card:hover{transform:translateY(-5px) rotateX(1deg) rotateY(-.5deg);border-color:var(--o-strong);box-shadow:0 6px 0 rgba(48,22,120,.06),0 18px 32px rgba(48,22,120,.16)}
+.showcase-card:focus-visible{outline:3px solid var(--pen);outline-offset:4px}
+.showcase-card.is-placeholder{cursor:default}
+.showcase-card.is-placeholder:hover{transform:none}
+.showcase-visual{height:184px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.showcase-visual:before,.showcase-visual:after{content:"";position:absolute;pointer-events:none}
+.showcase-logo{position:absolute;z-index:2;top:18px;left:18px;display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.9);box-shadow:0 3px 10px rgba(42,24,56,.12);font-family:var(--head);font-size:13px;font-weight:700;color:#2A1838}
+.showcase-logo-mark{width:18px;height:18px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:10px;font-weight:800}
+.visual-novartis{background:#e8eef9}
+.visual-novartis:before{width:74%;height:64%;border-radius:12px;background:#fff;box-shadow:0 12px 24px rgba(40,64,120,.14)}
+.visual-novartis:after{width:44%;height:25%;border-radius:8px;background:#f1ecff;border:1px solid #c2b1f7;box-shadow:inset 30px 0 0 #8b6fe8}
+.visual-novartis .showcase-logo-mark{background:#3e64b5}
+.visual-instructure{background:#f2edff}
+.visual-instructure:before{width:70%;height:58%;border-radius:12px;background:linear-gradient(90deg,#fff 0 29%,transparent 29% 33%,#fff 33% 62%,transparent 62% 66%,#fff 66%);box-shadow:0 12px 24px rgba(80,58,140,.12)}
+.visual-instructure:after{width:18px;height:18px;border-radius:4px;background:#ffdf85;box-shadow:32px 16px #ffc4d6,64px -10px #bfe0ff,-30px 34px #ffdf85;transform:rotate(-8deg)}
+.visual-instructure .showcase-logo-mark{border-radius:4px;background:#6b2bff}
+.visual-michigan{background:#d7efea}
+.visual-michigan:before{width:74%;height:62%;border-radius:12px;background:#fff;box-shadow:0 12px 24px rgba(15,94,88,.12)}
+.visual-michigan:after{width:45%;height:34%;background:linear-gradient(to top,#0f766e 0 65%,transparent 65% 100%);clip-path:polygon(0 100%,0 66%,14% 66%,14% 44%,28% 44%,28% 57%,42% 57%,42% 27%,56% 27%,56% 46%,70% 46%,70% 10%,84% 10%,84% 35%,100% 35%,100% 100%)}
+.visual-michigan .showcase-logo-mark{background:#0f766e}
+.visual-music{background:#ffe9df}
+.visual-music:before{width:70%;height:54%;border-radius:16px;background:#fffdf9;box-shadow:0 12px 24px rgba(100,56,40,.12);transform:rotate(-3deg)}
+.visual-music:after{width:72px;height:72px;border-radius:50%;background:#c5b3ff;box-shadow:58px 18px #ffb083,-62px 35px #8ed2c2;mix-blend-mode:multiply}
+.visual-music .showcase-logo-mark{background:#6b2bff}
+.visual-workspace{background:#eee9fb}
+.visual-workspace:before{width:74%;height:62%;border-radius:12px;background:#fff;box-shadow:0 12px 24px rgba(48,22,120,.12)}
+.visual-workspace:after{width:52%;height:8px;border-radius:4px;background:#b9a7f5;box-shadow:0 20px #dce2ee,0 40px #dce2ee,0 60px #dce2ee}
+.visual-workspace .showcase-logo-mark{background:#6b2bff}
+.showcase-content{display:flex;flex:1;flex-direction:column;padding:18px 18px 20px}
+.showcase-title{font-size:19px;line-height:1.15;margin:0 0 10px}
+.showcase-role{font-size:13px;color:var(--quiet);margin:0 0 12px}
+.showcase-description{font-size:14px;line-height:1.45;margin:0;color:var(--ink)}
+.showcase-skills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}
+.showcase-skills li{font-size:11px;line-height:1.2;padding:5px 8px;border-radius:999px;background:var(--lavender);color:var(--ink)}
+.showcase-status{margin-top:auto;padding-top:16px;font-size:12px;font-weight:600;color:var(--quiet)}
+.showcase-home .showcase-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.page[data-page="home"] > .o-home,.page[data-page="home"] > .o-home + .wrap{display:none}
+@media (max-width:1000px){
+  .showcase-track{grid-auto-columns:38.5%}
+}
+@media (max-width:700px){
+  .showcase-home{padding:52px 0 64px}
+  .showcase-heading{align-items:start;flex-direction:column;gap:18px}
+  .showcase-heading p{font-size:17px}
+  .showcase-controls{align-self:end}
+  .showcase-track{grid-auto-columns:88%;gap:16px}
+  .showcase-visual{height:184px}
+}
+@media (prefers-reduced-motion:reduce){
+  .showcase-card,.showcase-arrow{transition:none}
+}
+
 /* generic pages */
 .page-head{padding:80px 0 40px;max-width:760px}
 .page-head h1{font-size:clamp(40px,5.4vw,64px)}
@@ -132,6 +205,9 @@ main{padding-top:calc(var(--bar) + 8px)}
 .rail a.active{color:var(--ink);font-weight:600;background:linear-gradient(transparent 50%,var(--hl) 50%,var(--hl) 90%,transparent 90%)}
 .rail .back{margin-bottom:20px;font-size:14px}
 .cs-main{max-width:948px;padding-bottom:80px;min-width:0}
+.cs-return{display:inline-flex;align-items:center;gap:8px;color:var(--quiet);font-size:14px;font-weight:600;text-decoration:none;padding:6px 0;margin:24px 0 -40px;position:relative;z-index:1}
+.cs-return:hover{color:var(--ink)}
+.cs-return svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .cs-main section{padding-top:56px}
 .row{max-width:680px}
 .noted{display:grid;grid-template-columns:minmax(0,680px) 228px;gap:40px;align-items:start}
@@ -743,7 +819,6 @@ footer{margin-top:80px;border-top:1px solid var(--line)}
   <div class="bar-in">
     <a class="brand" href="#/">Xandra Bai</a>
     <nav class="nav" aria-label="Main">
-      <a href="#/work" data-nav="work">Work</a>
       <a href="#/about" data-nav="about">About</a>
       <a href="#/resume" data-nav="resume">Resume</a>
     </nav>
@@ -754,6 +829,83 @@ footer{margin-top:80px;border-top:1px solid var(--line)}
 
 <!-- HOME -->
 <div class="page" data-page="home">
+<section class="showcase-home" aria-labelledby="showcase-title">
+  <div class="wrap">
+    <h1 class="showcase-hero-title"><span class="showcase-underline">Product Builder</span> who understands both <span class="showcase-underline">technology</span> and <span class="showcase-underline">people</span></h1>
+    <div class="showcase-heading">
+      <div>
+        <h2 id="showcase-title">Selected work</h2>
+      </div>
+      <div class="showcase-controls" aria-label="Project carousel controls">
+        <button class="showcase-arrow" type="button" data-showcase-prev aria-label="Show previous projects" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"></path></svg>
+        </button>
+        <button class="showcase-arrow" type="button" data-showcase-next aria-label="Show next projects">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+        </button>
+      </div>
+    </div>
+    <div class="showcase-track" data-showcase-track tabindex="0" aria-label="Selected projects">
+      <a class="showcase-card" href="#/work/novartis">
+        <div class="showcase-visual visual-novartis">
+          <span class="showcase-logo"><span class="showcase-logo-mark">N</span>Novartis</span>
+          <span class="showcase-sr">Abstract AI assistant interface visual</span>
+        </div>
+        <div class="showcase-content">
+          <h2 class="showcase-title">AI-powered sales assistant for pharma commercial teams</h2>
+          <p class="showcase-role">AI Product Manager Intern</p>
+          <ul class="showcase-skills"><li>Product Discovery</li><li>MVP Prioritization</li><li>AI Product Strategy</li><li>Cross-functional Execution</li></ul>
+        </div>
+      </a>
+      <a class="showcase-card" href="#/work/instructure">
+        <div class="showcase-visual visual-instructure">
+          <span class="showcase-logo"><span class="showcase-logo-mark">I</span>Instructure</span>
+          <span class="showcase-sr">Abstract education product growth visual</span>
+        </div>
+        <div class="showcase-content">
+          <h2 class="showcase-title">Product growth strategy for Canvas LMS</h2>
+          <p class="showcase-role">Program Manager Intern</p>
+          <ul class="showcase-skills"><li>Market Research</li><li>User Interviews</li><li>Product Strategy</li><li>Roadmap Prioritization</li></ul>
+        </div>
+      </a>
+      <a class="showcase-card" href="#/work/hepc">
+        <div class="showcase-visual visual-michigan">
+          <span class="showcase-logo"><span class="showcase-logo-mark">M</span>Michigan Medicine</span>
+          <span class="showcase-sr">Abstract healthcare analytics visual</span>
+        </div>
+        <div class="showcase-content">
+          <h2 class="showcase-title">Large-scale healthcare impact evaluation</h2>
+          <p class="showcase-role">Data Analyst Intern</p>
+          <ul class="showcase-skills"><li>Impact Evaluation</li><li>SQL &amp; R</li><li>Data Visualization</li><li>Business Intelligence</li></ul>
+        </div>
+      </a>
+      <article class="showcase-card is-placeholder">
+        <div class="showcase-visual visual-music">
+          <span class="showcase-logo"><span class="showcase-logo-mark">M</span>Music Sprout</span>
+          <span class="showcase-sr">Abstract music practice and well-being visual</span>
+        </div>
+        <div class="showcase-content">
+          <h2 class="showcase-title">Personalized well-being for music students</h2>
+          <p class="showcase-role">Product Manager · Team Lead</p>
+          <ul class="showcase-skills"><li>0-to-1 Product Development</li><li>UX Research</li><li>Solution Validation</li><li>Product Leadership</li></ul>
+          <span class="showcase-status">Case study coming soon</span>
+        </div>
+      </article>
+      <article class="showcase-card is-placeholder">
+        <div class="showcase-visual visual-workspace">
+          <span class="showcase-logo"><span class="showcase-logo-mark">W</span>Workspace Optimizer</span>
+          <span class="showcase-sr">Abstract file management workflow visual</span>
+        </div>
+        <div class="showcase-content">
+          <h2 class="showcase-title">Smarter Google Drive file management</h2>
+          <p class="showcase-role">Product Builder · Full-stack Developer</p>
+          <ul class="showcase-skills"><li>Technical Product Development</li><li>Workflow Optimization</li><li>Google APIs</li><li>Performance Analytics</li></ul>
+          <span class="showcase-status">Case study coming soon</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 <section class="o-home" aria-labelledby="o-title">
 <h1 id="o-title" class="o-sr">Xandra Bai, product manager: work experience and my own product</h1>
 <div class="o-stage">
@@ -1215,6 +1367,7 @@ footer{margin-top:80px;border-top:1px solid var(--line)}
     </aside>
 
     <div class="cs-main">
+      <a class="cs-return" href="#/" aria-label="Return to home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18 5 12l6-6"></path></svg><span>Return home</span></a>
       <details class="sections-mobile">
         <summary>Sections</summary>
         <nav aria-label="Case study sections">
@@ -1497,6 +1650,7 @@ footer{margin-top:80px;border-top:1px solid var(--line)}
     </aside>
 
     <div class="cs-main">
+      <a class="cs-return" href="#/" aria-label="Return to home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18 5 12l6-6"></path></svg><span>Return home</span></a>
       <details class="sections-mobile">
         <summary>Sections</summary>
         <nav aria-label="Case study sections">
@@ -1683,6 +1837,7 @@ footer{margin-top:80px;border-top:1px solid var(--line)}
     </aside>
 
     <div class="cs-main">
+      <a class="cs-return" href="#/" aria-label="Return to home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18 5 12l6-6"></path></svg><span>Return home</span></a>
       <details class="sections-mobile">
         <summary>Sections</summary>
         <nav aria-label="Short read sections">
@@ -1804,6 +1959,7 @@ footer{margin-top:80px;border-top:1px solid var(--line)}
     </aside>
 
     <div class="cs-main">
+      <a class="cs-return" href="#/" aria-label="Return to home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18 5 12l6-6"></path></svg><span>Return home</span></a>
       <details class="sections-mobile">
         <summary>Sections</summary>
         <nav aria-label="Case study sections">
@@ -2152,6 +2308,31 @@ footer{margin-top:80px;border-top:1px solid var(--line)}
   window.addEventListener('hashchange', route);
   route();
 
+  var track = document.querySelector('[data-showcase-track]');
+  var prev = document.querySelector('[data-showcase-prev]');
+  var next = document.querySelector('[data-showcase-next]');
+  if (track && prev && next) {
+    function updateShowcaseControls(){
+      var max = track.scrollWidth - track.clientWidth;
+      prev.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft >= max - 2;
+    }
+    function moveShowcase(direction){
+      var card = track.querySelector('.showcase-card');
+      if (!card) return;
+      var distance = card.getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap || '0');
+      track.scrollBy({left: direction * distance, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+    }
+    prev.addEventListener('click', function(){ moveShowcase(-1); });
+    next.addEventListener('click', function(){ moveShowcase(1); });
+    track.addEventListener('scroll', updateShowcaseControls, {passive:true});
+    track.addEventListener('keydown', function(e){
+      if (e.key === 'ArrowLeft') { e.preventDefault(); moveShowcase(-1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); moveShowcase(1); }
+    });
+    window.addEventListener('resize', updateShowcaseControls);
+    updateShowcaseControls();
+  }
 
   document.querySelectorAll('[data-orbit]').forEach(function(el){
     var st = el.closest('.o-stage'); if (!st) return;
