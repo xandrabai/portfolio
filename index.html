@@ -2304,8 +2304,7 @@ footer{margin-top:80px;border-top:1px solid var(--line)}
       if (on) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
     });
     document.title = titles[key];
-    gtag('config', 'G-H242JNGLJP', {
-      send_page_view: true,
+    gtag('event', 'page_view', {
       page_title: titles[key],
       page_location: window.location.href,
       page_path: h ? '/' + h : '/'
